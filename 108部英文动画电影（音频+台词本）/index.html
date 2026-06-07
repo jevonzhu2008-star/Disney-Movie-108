@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>疯狂动物城 — 动画台词学习</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: radial-gradient(circle at 30% 20%, #2c1654 0%, #1a1a2e 60%, #0a0a1f 100%);
+  color: #eee; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.movie-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  max-width: 880px; width: 100%;
+  background: rgba(22, 33, 62, 0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+.cover-link {
+  display: block; aspect-ratio: 2/3;
+  border-radius: 12px; overflow: hidden;
+  background: #0f3460;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.cover-link:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 16px 48px rgba(233, 69, 96, 0.4); }
+.cover-link::after {
+  content: "▶";
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 64px; color: #fff;
+  background: rgba(0,0,0,0.45);
+  opacity: 0; transition: opacity .2s;
+}
+.cover-link:hover::after { opacity: 1; }
+.cover-link img, .cover-link svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+.info { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.info h1 {
+  font-size: 36px; font-weight: 700; color: #fff;
+  margin-bottom: 4px; line-height: 1.15;
+}
+.info .en-title {
+  font-size: 18px; color: #e94560; font-weight: 500;
+  margin-bottom: 14px; letter-spacing: 1px;
+}
+.info .meta-row {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 18px; font-size: 13px; color: #aaa;
+}
+.info .meta-row span {
+  background: rgba(255,255,255,0.06); padding: 4px 12px; border-radius: 12px;
+}
+.info .desc {
+  color: #cdd; font-size: 14px; line-height: 1.75;
+  margin-bottom: 22px;
+}
+.info .play-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, #e94560, #f08080);
+  color: #fff; padding: 12px 28px; border-radius: 30px;
+  text-decoration: none; font-size: 15px; font-weight: 600;
+  width: fit-content;
+  box-shadow: 0 4px 16px rgba(233, 69, 96, 0.4);
+  transition: all .2s;
+}
+.info .play-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6); }
+@media (max-width: 720px) {
+  .movie-card { grid-template-columns: 1fr; padding: 20px; gap: 20px; text-align: center; }
+  .cover-link { max-width: 240px; margin: 0 auto; }
+  .info { align-items: center; }
+  .info h1 { font-size: 28px; }
+  .info .meta-row { justify-content: center; }
+}
+footer {
+  position: fixed; bottom: 12px; left: 0; right: 0;
+  text-align: center; font-size: 11px; color: #555;
+}
+</style>
+</head>
+<body>
+<div class="movie-card">
+  <a href="%E7%96%AF%E7%8B%82%E5%8A%A8%E7%89%A9%E5%9F%8E.html" class="cover-link" title="点击播放">
+    <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#2c1654"/>
+<stop offset="55%" stop-color="#5b2a86"/>
+<stop offset="100%" stop-color="#e94560"/>
+</linearGradient>
+<linearGradient id="city" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0a0a1f" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#0a0a1f"/>
+</linearGradient>
+<radialGradient id="sun" cx="0.5" cy="0.45" r="0.18">
+<stop offset="0%" stop-color="#fff5a8"/>
+<stop offset="60%" stop-color="#ffb56b" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#ffb56b" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="200" height="300" fill="url(#sky)"/>
+<rect width="200" height="300" fill="url(#sun)"/>
+<g fill="#fff" opacity="0.7">
+<circle cx="20" cy="30" r="0.8"/><circle cx="170" cy="22" r="0.6"/>
+<circle cx="50" cy="60" r="0.5"/><circle cx="140" cy="50" r="0.7"/>
+<circle cx="180" cy="80" r="0.5"/><circle cx="35" cy="100" r="0.6"/>
+<circle cx="100" cy="25" r="0.7"/><circle cx="160" cy="110" r="0.5"/>
+</g>
+<g fill="#1a1530" opacity="0.7">
+<polygon points="0,200 0,170 15,170 18,155 25,155 28,160 40,160 42,150 55,150 58,165 75,165 78,140 95,140 98,158 115,158 118,148 135,148 138,155 155,155 158,145 175,145 180,160 200,160 200,200"/>
+</g>
+<g fill="url(#city)">
+<polygon points="0,300 0,210 10,210 10,180 25,180 25,200 35,200 35,170 45,170 45,205 60,205 60,160 70,160 70,150 78,150 78,205 90,205 90,175 105,175 105,195 115,195 115,165 130,165 130,185 142,185 142,200 158,200 158,170 172,170 172,210 185,210 185,195 200,195 200,300"/>
+</g>
+<g fill="#ffd56b" opacity="0.85">
+<rect x="12" y="220" width="2" height="3"/><rect x="17" y="225" width="2" height="3"/>
+<rect x="27" y="208" width="2" height="3"/><rect x="32" y="215" width="2" height="3"/>
+<rect x="37" y="182" width="2" height="3"/><rect x="42" y="195" width="2" height="3"/>
+<rect x="62" y="175" width="2" height="3"/><rect x="67" y="195" width="2" height="3"/>
+<rect x="72" y="160" width="2" height="3"/><rect x="80" y="180" width="2" height="3"/>
+<rect x="92" y="190" width="2" height="3"/><rect x="100" y="200" width="2" height="3"/>
+<rect x="107" y="180" width="2" height="3"/><rect x="118" y="172" width="2" height="3"/>
+<rect x="132" y="195" width="2" height="3"/><rect x="144" y="190" width="2" height="3"/>
+<rect x="160" y="180" width="2" height="3"/><rect x="174" y="200" width="2" height="3"/>
+<rect x="187" y="220" width="2" height="3"/>
+</g>
+<g fill="#0a0a1f">
+<ellipse cx="86" cy="195" rx="6" ry="22" transform="rotate(-12 86 195)"/>
+<ellipse cx="104" cy="192" rx="6" ry="22" transform="rotate(8 104 192)"/>
+</g>
+<g fill="#e94560" opacity="0.7">
+<ellipse cx="86" cy="198" rx="2.5" ry="14" transform="rotate(-12 86 198)"/>
+<ellipse cx="104" cy="195" rx="2.5" ry="14" transform="rotate(8 104 195)"/>
+</g>
+<g fill="#0a0a1f">
+<ellipse cx="95" cy="232" rx="20" ry="18"/>
+<ellipse cx="95" cy="280" rx="36" ry="28"/>
+</g>
+<circle cx="95" cy="268" r="4.5" fill="#ffd56b"/>
+<text x="95" y="270.5" font-family="Arial,sans-serif" font-size="5" font-weight="bold" fill="#0a0a1f" text-anchor="middle">&#9733;</text>
+<g fill="#ffd56b">
+<circle cx="88" cy="228" r="1.5"/>
+<circle cx="102" cy="228" r="1.5"/>
+</g>
+<g font-family="Impact, Arial Black, sans-serif" text-anchor="middle">
+<text x="100" y="55" font-size="22" fill="#fff" letter-spacing="1.5">ZOOTOPIA</text>
+<text x="100" y="73" font-size="9" fill="#ffd56b" letter-spacing="3">疯 狂 动 物 城</text>
+</g>
+</svg>
+  </a>
+  <div class="info">
+    <h1>疯狂动物城</h1>
+    <div class="en-title">Zootopia</div>
+    <div class="meta-row">
+      <span>📅 2016</span>
+      <span>🎬 迪士尼</span>
+      <span>⏱ 约 96 分钟</span>
+      <span>📝 1690 行台词</span>
+    </div>
+    <p class="desc">出身兔窝镇的兔子朱迪怀揣警察梦想，跨越偏见进入动物城警局。在追查食肉动物失踪案的过程中，她与一名油嘴滑舌的狐狸尼克结成搭档，揭开了笼罩在乌托邦之下的恐惧与阴谋。一部关于偏见、勇气与改变的迪士尼经典。</p>
+    <a href="%E7%96%AF%E7%8B%82%E5%8A%A8%E7%89%A9%E5%9F%8E.html" class="play-btn">▶ 开始学习</a>
+  </div>
+</div>
+<footer>本地播放 · 音频转录 + 中英台词对齐</footer>
+</body>
+</html>

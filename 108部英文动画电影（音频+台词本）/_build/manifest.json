@@ -1,0 +1,898 @@
+[
+  {
+    "id": 1,
+    "title": "疯狂动物城",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\1.疯狂动物城.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\004.疯狂动物城.txt",
+    "match": "exact",
+    "script_title": "疯狂动物城"
+  },
+  {
+    "id": 2,
+    "title": "蜘蛛侠：平行宇宙",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\2.蜘蛛侠：平行宇宙.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\036.蜘蛛侠：平行宇宙.txt",
+    "match": "exact",
+    "script_title": "蜘蛛侠：平行宇宙"
+  },
+  {
+    "id": 3,
+    "title": "守护者联盟",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\3.守护者联盟.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\046.守护者联盟.txt",
+    "match": "exact",
+    "script_title": "守护者联盟"
+  },
+  {
+    "id": 4,
+    "title": "超能陆战队",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\4.超能陆战队.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\047.超能陆战队Big.Hero.txt",
+    "match": "exact",
+    "script_title": "超能陆战队Big.Hero"
+  },
+  {
+    "id": 5,
+    "title": "海洋奇缘",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\5.海洋奇缘.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\023.海洋奇缘.txt",
+    "match": "exact",
+    "script_title": "海洋奇缘"
+  },
+  {
+    "id": 6,
+    "title": "欢乐好声音",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\6.欢乐好声音.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\087.欢乐好声音..txt",
+    "match": "exact",
+    "script_title": "欢乐好声音."
+  },
+  {
+    "id": 7,
+    "title": "冰雪奇缘",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\7.冰雪奇缘.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\002.冰雪奇缘2.txt",
+    "match": "exact",
+    "script_title": "冰雪奇缘2"
+  },
+  {
+    "id": 8,
+    "title": "鲁滨逊漂流记",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\8.鲁滨逊漂流记.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\048.鲁滨逊漂流记.txt",
+    "match": "exact",
+    "script_title": "鲁滨逊漂流记"
+  },
+  {
+    "id": 9,
+    "title": "绿野仙踪",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\9.绿野仙踪.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\049.绿野仙踪.txt",
+    "match": "exact",
+    "script_title": "绿野仙踪"
+  },
+  {
+    "id": 10,
+    "title": "寻梦环游记",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\10.寻梦环游记.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\050.寻梦环游记.txt",
+    "match": "exact",
+    "script_title": "寻梦环游记"
+  },
+  {
+    "id": 11,
+    "title": "驯龙高手1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\11.驯龙高手1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\066.驯龙高手1.txt",
+    "match": "exact",
+    "script_title": "驯龙高手1"
+  },
+  {
+    "id": 12,
+    "title": "驯龙高手2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\12.驯龙高手2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\067.驯龙高手2.txt",
+    "match": "exact",
+    "script_title": "驯龙高手2"
+  },
+  {
+    "id": 13,
+    "title": "驯龙高手3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\13.驯龙高手3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\068.驯龙高手3.txt",
+    "match": "exact",
+    "script_title": "驯龙高手3"
+  },
+  {
+    "id": 14,
+    "title": "冰河世纪1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\14.冰河世纪1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\055.冰河世纪5.星际碰撞.txt",
+    "match": "contain_0.50",
+    "script_title": "冰河世纪5.星际碰撞"
+  },
+  {
+    "id": 15,
+    "title": "冰河世纪2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\15.冰河世纪2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\051.冰河世纪1.txt",
+    "match": "exact",
+    "script_title": "冰河世纪1"
+  },
+  {
+    "id": 16,
+    "title": "冰河世纪3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\16.冰河世纪3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\052.冰河世纪2.txt",
+    "match": "exact",
+    "script_title": "冰河世纪2"
+  },
+  {
+    "id": 17,
+    "title": "冰河世纪4",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\17.冰河世纪4.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\053.冰河世纪3.txt",
+    "match": "exact",
+    "script_title": "冰河世纪3"
+  },
+  {
+    "id": 18,
+    "title": "冰河世纪5",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\18.冰河世纪5.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\054.冰河世纪4..txt",
+    "match": "exact",
+    "script_title": "冰河世纪4."
+  },
+  {
+    "id": 19,
+    "title": "魔发奇缘",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\19.魔发奇缘.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\024.魔发奇缘.txt",
+    "match": "exact",
+    "script_title": "魔发奇缘"
+  },
+  {
+    "id": 20,
+    "title": "与恐龙同行",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\20与恐龙同行.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\056.与恐龙同行.txt",
+    "match": "exact",
+    "script_title": "与恐龙同行"
+  },
+  {
+    "id": 21,
+    "title": "重返侏罗纪",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\21.重返侏罗纪.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\057.重返侏罗纪.txt",
+    "match": "exact",
+    "script_title": "重返侏罗纪"
+  },
+  {
+    "id": 22,
+    "title": "无敌破坏王1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\22.无敌破坏王1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\058.无敌破坏王.txt",
+    "match": "exact",
+    "script_title": "无敌破坏王"
+  },
+  {
+    "id": 23,
+    "title": "无敌破坏王2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\23.无敌破坏王2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\059.无敌破坏王2.txt",
+    "match": "exact",
+    "script_title": "无敌破坏王2"
+  },
+  {
+    "id": 24,
+    "title": "头脑特工队",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\24.头脑特工队.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\060.头脑特工队.txt",
+    "match": "exact",
+    "script_title": "头脑特工队"
+  },
+  {
+    "id": 25,
+    "title": "狮子王1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\25.狮子王1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\005. 狮子王1.txt",
+    "match": "exact",
+    "script_title": "狮子王1"
+  },
+  {
+    "id": 26,
+    "title": "狮子王2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\26.狮子王2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\007. 狮子王3.txt",
+    "match": "exact",
+    "script_title": "狮子王3"
+  },
+  {
+    "id": 27,
+    "title": "狮子王3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\27.狮子王3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\008.狮子王.The.Lion.King.2019.txt",
+    "match": "exact",
+    "script_title": "狮子王.The.Lion.King.2019"
+  },
+  {
+    "id": 28,
+    "title": "大侦探皮卡丘",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\28.大侦探皮卡丘.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\019.大侦探皮卡丘.txt",
+    "match": "exact",
+    "script_title": "大侦探皮卡丘"
+  },
+  {
+    "id": 29,
+    "title": "神偷奶爸1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\29.神偷奶爸1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\026.神偷奶爸1.txt",
+    "match": "exact",
+    "script_title": "神偷奶爸1"
+  },
+  {
+    "id": 30,
+    "title": "神偷奶爸2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\30.神偷奶爸2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\027.神偷奶爸2.txt",
+    "match": "exact",
+    "script_title": "神偷奶爸2"
+  },
+  {
+    "id": 31,
+    "title": "神偷奶爸3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\31.神偷奶爸3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\028.神偷奶爸3..txt",
+    "match": "exact",
+    "script_title": "神偷奶爸3."
+  },
+  {
+    "id": 32,
+    "title": "小黄人大眼萌",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\32.小黄人大眼萌.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\061.小黄人大眼萌.txt",
+    "match": "exact",
+    "script_title": "小黄人大眼萌"
+  },
+  {
+    "id": 33,
+    "title": "超人总动员1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\33.超人总动员1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\106.超人特工队.txt",
+    "match": "alias",
+    "script_title": "超人特工队"
+  },
+  {
+    "id": 34,
+    "title": "超人总动员2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\34.超人总动员2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\107.超人总动员2.txt",
+    "match": "exact",
+    "script_title": "超人总动员2"
+  },
+  {
+    "id": 35,
+    "title": "功夫熊猫1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\35.功夫熊猫1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\063.功夫熊猫1.txt",
+    "match": "exact",
+    "script_title": "功夫熊猫1"
+  },
+  {
+    "id": 36,
+    "title": "功夫熊猫2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\36.功夫熊猫2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\064.功夫熊猫2.txt",
+    "match": "exact",
+    "script_title": "功夫熊猫2"
+  },
+  {
+    "id": 37,
+    "title": "功夫熊猫3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\37.功夫熊猫3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\065.功夫熊猫3..txt",
+    "match": "exact",
+    "script_title": "功夫熊猫3."
+  },
+  {
+    "id": 38,
+    "title": "汽车总动员1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\38.汽车总动员1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\084.汽车总动员1.txt",
+    "match": "exact",
+    "script_title": "汽车总动员1"
+  },
+  {
+    "id": 39,
+    "title": "汽车总动员2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\39.汽车总动员2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\085.汽车总动员2.txt",
+    "match": "exact",
+    "script_title": "汽车总动员2"
+  },
+  {
+    "id": 40,
+    "title": "汽车总动员3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\40.汽车总动员3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\086.汽车总动员3.txt",
+    "match": "exact",
+    "script_title": "汽车总动员3"
+  },
+  {
+    "id": 41,
+    "title": "恐龙当家",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\41.恐龙当家.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\069.恐龙当家.txt",
+    "match": "exact",
+    "script_title": "恐龙当家"
+  },
+  {
+    "id": 42,
+    "title": "飞屋环游记",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\42.飞屋环游记.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\070.飞屋环游记.txt",
+    "match": "exact",
+    "script_title": "飞屋环游记"
+  },
+  {
+    "id": 43,
+    "title": "海底总动员1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\43.海底总动员1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\072.海底总动员2：多莉去哪儿.txt",
+    "match": "contain_0.50",
+    "script_title": "海底总动员2：多莉去哪儿"
+  },
+  {
+    "id": 44,
+    "title": "海底总动员2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\44.海底总动员2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\071.海底总动员1.txt",
+    "match": "exact",
+    "script_title": "海底总动员1"
+  },
+  {
+    "id": 45,
+    "title": "宝贝老板",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\45.宝贝老板.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\073.宝贝老板.txt",
+    "match": "exact",
+    "script_title": "宝贝老板"
+  },
+  {
+    "id": 46,
+    "title": "爱宠大机密",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\46.爱宠大机密.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\075.爱宠大机密2.txt",
+    "match": "exact",
+    "script_title": "爱宠大机密2"
+  },
+  {
+    "id": 47,
+    "title": "小王子",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\47.小王子.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\037.小王子.txt",
+    "match": "exact",
+    "script_title": "小王子"
+  },
+  {
+    "id": 48,
+    "title": "机器人总动员",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\48.机器人总动员.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\076.机器人总动员.txt",
+    "match": "exact",
+    "script_title": "机器人总动员"
+  },
+  {
+    "id": 49,
+    "title": "奇幻森林",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\49.奇幻森林.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\088.奇幻森林.The.Jungle.txt",
+    "match": "exact",
+    "script_title": "奇幻森林.The.Jungle"
+  },
+  {
+    "id": 50,
+    "title": "疯狂原始人",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\50.疯狂原始人.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\089.疯狂原始人.txt",
+    "match": "exact",
+    "script_title": "疯狂原始人"
+  },
+  {
+    "id": 51,
+    "title": "马达加斯加1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\51.马达加斯加1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\038.马达加斯加1.txt",
+    "match": "exact",
+    "script_title": "马达加斯加1"
+  },
+  {
+    "id": 52,
+    "title": "马达加斯加2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\52.马达加斯加2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\039.马达加斯加II.txt",
+    "match": "exact",
+    "script_title": "马达加斯加II"
+  },
+  {
+    "id": 53,
+    "title": "马达加斯加3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\53.马达加斯加3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\040.马达加斯加3.txt",
+    "match": "exact",
+    "script_title": "马达加斯加3"
+  },
+  {
+    "id": 54,
+    "title": "马达加斯加4",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\54.马达加斯加4.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\041.马达加斯加4.txt",
+    "match": "exact",
+    "script_title": "马达加斯加4"
+  },
+  {
+    "id": 55,
+    "title": "勇敢传说",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\55.勇敢传说.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\090.勇敢传说.txt",
+    "match": "exact",
+    "script_title": "勇敢传说"
+  },
+  {
+    "id": 56,
+    "title": "小马国女孩1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\56.小马国女孩1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\099.小马国女孩1.txt",
+    "match": "exact",
+    "script_title": "小马国女孩1"
+  },
+  {
+    "id": 57,
+    "title": "小马国女孩2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\57.小马国女孩2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\100.小马国女孩2.txt",
+    "match": "exact",
+    "script_title": "小马国女孩2"
+  },
+  {
+    "id": 58,
+    "title": "小马国女孩3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\58.小马国女孩3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\101.小马国女孩3.txt",
+    "match": "exact",
+    "script_title": "小马国女孩3"
+  },
+  {
+    "id": 59,
+    "title": "丁丁历险记",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\59.丁丁历险记.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\062.丁丁历险记.txt",
+    "match": "exact",
+    "script_title": "丁丁历险记"
+  },
+  {
+    "id": 60,
+    "title": "了不起的狐狸爸爸",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\60.了不起的狐狸爸爸.mp3",
+    "script": null,
+    "match": "no_match",
+    "script_title": null
+  },
+  {
+    "id": 61,
+    "title": "怪物公司",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\61.怪物公司.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\081.怪物公司.txt",
+    "match": "exact",
+    "script_title": "怪物公司"
+  },
+  {
+    "id": 62,
+    "title": "怪兽大学",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\62.怪兽大学.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\083.怪物大学.txt",
+    "match": "similar_0.75",
+    "script_title": "怪物大学"
+  },
+  {
+    "id": 63,
+    "title": "乐高大电影1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\63.乐高大电影1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\078.乐高大电影1.txt",
+    "match": "exact",
+    "script_title": "乐高大电影1"
+  },
+  {
+    "id": 64,
+    "title": "乐高大电影2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\64.乐高大电影2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\079.乐高大电影2.txt",
+    "match": "exact",
+    "script_title": "乐高大电影2"
+  },
+  {
+    "id": 65,
+    "title": "精灵旅社1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\65.精灵旅社1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\029.精灵旅社1.txt",
+    "match": "exact",
+    "script_title": "精灵旅社1"
+  },
+  {
+    "id": 66,
+    "title": "精灵旅社2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\66.精灵旅社2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\030.精灵旅社2.txt",
+    "match": "exact",
+    "script_title": "精灵旅社2"
+  },
+  {
+    "id": 67,
+    "title": "精灵旅社3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\67.精灵旅社3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\031.精灵旅社3.txt",
+    "match": "exact",
+    "script_title": "精灵旅社3"
+  },
+  {
+    "id": 68,
+    "title": "赛车蜗牛",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\68.赛车蜗牛.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\080.赛车蜗牛.txt",
+    "match": "exact",
+    "script_title": "赛车蜗牛"
+  },
+  {
+    "id": 69,
+    "title": "玩具总动员1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\69.玩具总动员1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\042.玩具总动员1.txt",
+    "match": "exact",
+    "script_title": "玩具总动员1"
+  },
+  {
+    "id": 70,
+    "title": "玩具总动员2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\70.玩具总动员2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\043.玩具总动员2.txt",
+    "match": "exact",
+    "script_title": "玩具总动员2"
+  },
+  {
+    "id": 71,
+    "title": "玩具总动员3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\71.玩具总动员3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\044.玩具总动员3.txt",
+    "match": "exact",
+    "script_title": "玩具总动员3"
+  },
+  {
+    "id": 72,
+    "title": "玩具总动员4",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\72.玩具总动员4.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\045.玩具总动员4.txt",
+    "match": "exact",
+    "script_title": "玩具总动员4"
+  },
+  {
+    "id": 73,
+    "title": "霍顿与无名氏",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\73.霍顿与无名氏.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\091.霍顿与无名氏.txt",
+    "match": "exact",
+    "script_title": "霍顿与无名氏"
+  },
+  {
+    "id": 74,
+    "title": "花木兰1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\74.花木兰1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\012.花木兰1.txt",
+    "match": "exact",
+    "script_title": "花木兰1"
+  },
+  {
+    "id": 75,
+    "title": "花木兰",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\75.花木兰.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\013.花木兰2.txt",
+    "match": "exact",
+    "script_title": "花木兰2"
+  },
+  {
+    "id": 76,
+    "title": "仙履奇缘",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\76.仙履奇缘.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\015.仙履奇缘3.txt",
+    "match": "exact",
+    "script_title": "仙履奇缘3"
+  },
+  {
+    "id": 77,
+    "title": "仙履奇缘2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\77.仙履奇缘2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\025.仙履奇缘1.txt",
+    "match": "exact",
+    "script_title": "仙履奇缘1"
+  },
+  {
+    "id": 78,
+    "title": "仙履奇缘3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\78.仙履奇缘3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\034.仙履奇缘2.txt",
+    "match": "exact",
+    "script_title": "仙履奇缘2"
+  },
+  {
+    "id": 79,
+    "title": "阿拉丁",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\79.阿拉丁.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\092.阿拉丁.txt",
+    "match": "exact",
+    "script_title": "阿拉丁"
+  },
+  {
+    "id": 80,
+    "title": "爱丽丝梦游仙境",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\80.爱丽丝梦游仙境.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\018.爱丽丝仙境.txt",
+    "match": "similar_0.83",
+    "script_title": "爱丽丝仙境"
+  },
+  {
+    "id": 81,
+    "title": "白雪公主",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\81.白雪公主.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\017.白雪公主1937..txt",
+    "match": "exact",
+    "script_title": "白雪公主1937."
+  },
+  {
+    "id": 82,
+    "title": "美食总动员",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\82.美食总动员.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\095.美食总动员.txt",
+    "match": "exact",
+    "script_title": "美食总动员"
+  },
+  {
+    "id": 83,
+    "title": "史努比大电影",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\83.史努比大电影.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\077.史努比之花生大电影..txt",
+    "match": "similar_0.80",
+    "script_title": "史努比之花生大电影."
+  },
+  {
+    "id": 84,
+    "title": "飞机总动员1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\84.飞机总动员1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\105.飞机总动员2：火线救援..txt",
+    "match": "contain_0.56",
+    "script_title": "飞机总动员2：火线救援."
+  },
+  {
+    "id": 85,
+    "title": "飞机总动员2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\85.飞机总动员2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\104.飞机总动员.txt",
+    "match": "exact",
+    "script_title": "飞机总动员"
+  },
+  {
+    "id": 86,
+    "title": "快乐的大脚1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\86.快乐的大脚1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\102.快乐的大脚 Happy.Feet.2006.txt",
+    "match": "exact",
+    "script_title": "快乐的大脚 Happy.Feet.2006"
+  },
+  {
+    "id": 87,
+    "title": "快乐的大脚2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\87.快乐的大脚2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\103.快乐的大脚2 Happy.Feet.Two.2011.txt",
+    "match": "exact",
+    "script_title": "快乐的大脚2 Happy.Feet.Two.2011"
+  },
+  {
+    "id": 88,
+    "title": "号星球",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\88.51号星球.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\096.51号星球 Planet.51.txt",
+    "match": "exact",
+    "script_title": "号星球 Planet.51"
+  },
+  {
+    "id": 89,
+    "title": "里约大冒险1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\89.里约大冒险1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\032.里约大冒险1.txt",
+    "match": "exact",
+    "script_title": "里约大冒险1"
+  },
+  {
+    "id": 90,
+    "title": "里约大冒险2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\90.里约大冒险2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\033.里约大冒险2.txt",
+    "match": "exact",
+    "script_title": "里约大冒险2"
+  },
+  {
+    "id": 91,
+    "title": "虫虫总动员",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\91.虫虫总动员.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\094.虫虫总动员.txt",
+    "match": "exact",
+    "script_title": "虫虫总动员"
+  },
+  {
+    "id": 92,
+    "title": "愤怒的小鸟",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\92.愤怒的小鸟.mp3",
+    "script": null,
+    "match": "no_match",
+    "script_title": null
+  },
+  {
+    "id": 100,
+    "title": "海洋之歌",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\100.海洋之歌.mp3",
+    "script": null,
+    "match": "no_match",
+    "script_title": null
+  },
+  {
+    "id": 101,
+    "title": "小美人鱼1",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\101.小美人鱼1.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\014.小美人鱼1.txt",
+    "match": "exact",
+    "script_title": "小美人鱼1"
+  },
+  {
+    "id": 102,
+    "title": "小美人鱼2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\102.小美人鱼2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\016.小美人鱼3.txt",
+    "match": "exact",
+    "script_title": "小美人鱼3"
+  },
+  {
+    "id": 103,
+    "title": "小美人鱼3",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\103.小美人鱼3.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\108.小美人鱼2.txt",
+    "match": "exact",
+    "script_title": "小美人鱼2"
+  },
+  {
+    "id": 104,
+    "title": "小熊维尼",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\104.小熊维尼.mp3",
+    "script": null,
+    "match": "no_match",
+    "script_title": null
+  },
+  {
+    "id": 105,
+    "title": "头号玩家",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\105.头号玩家.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\097.头号玩家..txt",
+    "match": "exact",
+    "script_title": "头号玩家."
+  },
+  {
+    "id": 106,
+    "title": "绿毛怪格林奇",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\106.绿毛怪格林奇.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\093.绿毛怪格林奇.txt",
+    "match": "exact",
+    "script_title": "绿毛怪格林奇"
+  },
+  {
+    "id": 107,
+    "title": "疯狂外星人",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\107.疯狂外星人.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\098.疯狂外星人.txt",
+    "match": "exact",
+    "script_title": "疯狂外星人"
+  },
+  {
+    "id": 108,
+    "title": "冰雪奇缘2",
+    "audio": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\动画音频\\108冰雪奇缘2.mp3",
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\001.冰雪奇缘.txt",
+    "match": "exact",
+    "script_title": "冰雪奇缘"
+  },
+  {
+    "id": null,
+    "title": "变身特工",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\003.变身特工.txt",
+    "match": "script_only",
+    "script_title": "变身特工"
+  },
+  {
+    "id": null,
+    "title": "狮子王2：辛巴的荣耀",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\006狮子王2：辛巴的荣耀.txt",
+    "match": "script_only",
+    "script_title": "狮子王2：辛巴的荣耀"
+  },
+  {
+    "id": null,
+    "title": "魔法环游记",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\009.魔法环游记.txt",
+    "match": "script_only",
+    "script_title": "魔法环游记"
+  },
+  {
+    "id": null,
+    "title": "表情奇幻冒险",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\010.表情奇幻冒险.txt",
+    "match": "script_only",
+    "script_title": "表情奇幻冒险"
+  },
+  {
+    "id": null,
+    "title": "红鞋公主与七矮人",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\011.红鞋公主与七矮人.txt",
+    "match": "script_only",
+    "script_title": "红鞋公主与七矮人"
+  },
+  {
+    "id": null,
+    "title": "蓝精灵1",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\020.蓝精灵1.txt",
+    "match": "script_only",
+    "script_title": "蓝精灵1"
+  },
+  {
+    "id": null,
+    "title": "蓝精灵2",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\021.蓝精灵2.txt",
+    "match": "script_only",
+    "script_title": "蓝精灵2"
+  },
+  {
+    "id": null,
+    "title": "蓝精灵3",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\022.蓝精灵3.txt",
+    "match": "script_only",
+    "script_title": "蓝精灵3"
+  },
+  {
+    "id": null,
+    "title": "天才眼镜狗",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\035.天才眼镜狗.txt",
+    "match": "script_only",
+    "script_title": "天才眼镜狗"
+  },
+  {
+    "id": null,
+    "title": "爱宠大机密",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\074.爱宠大机密.txt",
+    "match": "script_only",
+    "script_title": "爱宠大机密"
+  },
+  {
+    "id": null,
+    "title": "恐龙世纪",
+    "audio": null,
+    "script": "D:\\OneDrive - IPowerBI\\视频\\外刊课\\108部英文动画电影（音频+台词本）\\台词本\\台词本TXT格式\\082.恐龙世纪.txt",
+    "match": "script_only",
+    "script_title": "恐龙世纪"
+  }
+]

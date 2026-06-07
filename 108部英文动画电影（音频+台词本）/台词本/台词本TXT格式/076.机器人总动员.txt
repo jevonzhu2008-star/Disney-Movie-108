@@ -1,0 +1,711 @@
+﻿机器人总动员
+洋克镇外的远方 有着另一个世界  # Out there There's a world outside of Yonkers #
+巴那比 远离这乡村小镇  # Way out there beyond this hick town, Barnaby #
+巴那比 有个繁华的大城  # There's a slick town, Barnaby #
+那儿是霓虹闪耀的不夜城  # Out there Full of shine and full of sparkle #
+巴那比 你闭上眼睛 也能看到金光闪耀  # Close your eyes and see it glisten, Barnaby #
+听着～ 巴那比  # Listen, Barnaby #
+穿上你的假日盛装吧 外面有着广阔的世界  # Put on your Sunday clothes There's lots of world out there #
+涂上发油 点起雪茄  # Get out the brilliantine and dime cigars #
+夜色中寻欢作乐  # We're gonna find adventure in the evening air #
+白衣女子 幽兰飘香 霓虹闪耀 亮如星辰  # Girls in white in a perfumed night # # Where the lights are bright as the stars #
+穿上你的假日盛装 我们坐新式敞篷马车出镇  # Put on your Sunday clothes We're gonna ride through town # # In one of those new horsedrawn open cars #
+去戴摩尼克看歌舞秀  # We'll see the shows at Delmonico's #
+我们要逛遍大街小巷  # And we'll close the town in a whirl #
+不得佳人芳泽 决不回家  # And we won't come home until we've kissed a girl #
+#... ride through town #
+# In one of those new horsedrawn open cars #
+# We'll see the shows at Delmonico's... #
+# And we won't come home until we've kissed a girl #
+机器人总动员
+[量大享折扣    巨购百货    超级大卖场]
+[巨购加油站]
+[巨购银行]
+# Buy N Large is your superstore #
+# We got all you need and so much more #
+(巨购商店街)
+[地球被垃圾覆盖 巨购执行长宣称 全球进入紧急状况]
+瓦力挖您出垃圾堆
+[巨购航站]
+家中堆满了垃圾?  Too much garbage in your face?
+空旷的太空等着您呢  There's plenty of space out in space!
+巨购宇航每日出航  BNL star liners leaving each day.
+您外出旅游时 我们替您打扫垃圾  We'll clean up the mess while you're away!
+巨购航舰队中最豪华的真理号  The jewel of the BNL fleet, the Axiom.
+让您渡个五年舒适的假期  Spend your five  year cruise in style,
+全自动的机组人员为您 提供全天24小时的服务  waited on 24 hours a day by our fully automated crew,
+舰长和自控自动导航系统  while your captain and autopilot
+也随时提供您娱乐购物、餐饮的需要  chart a course for nonstop entertainment, fine dining,
+有了我们四通八达的悬浮椅 连老奶奶都能出门享受一下  and with our all  access hoverchairs, even Grandma can join the fun.
+不用您自己走路  There's no need to walk.
+真理号将星星为您放进了豪华船舱  The Axiom. Putting the star in executive star liner.
+因为巨购给您以天涯为极限的享受  Because at BNL, space is the final fun  tier!
+周日时就别惦记着周一  # No Monday in your Sunday #
+穿上盛装就别想着工作  # No Monday in your Sunday clothes #
+沮丧时就穿上周日的盛装  # Put on your Sunday clothes when you feel down and out #
+逛逛街 照张相  # Strut down the street and have your picture took #
+穿着轻松 就会让你心情轻松  # Dressed like a dream Your spirits seem to turn about #
+周日的阳光必能保证  # That Sunday shine is a certain sign #
+你的心情就像穿着一样光鲜  # That you feel as fine as you look #
+我们将会忆起  # And we'll recall #
+当时光流逝后  # When time runs out #
+只消  # That it only #
+片刻  # took a moment #
+坠入情网  # to be loved #
+一世  # a whole life #
+之爱  # long #
+那就是  # And that is all #
+爱的真谛  # that love's about #
+只消片刻  #... a moment #
+坠入情网  # To be loved #
+一世  # a whole life #
+之爱  # Long #
+[警告 太阳电能过低]
+你是谁?  Who are you?
+你是谁?  Who are you?
+你是谁?  Who are you?
+抱住我 抱紧我  # Hold me close and hold me fast #
+你施的魔咒  # The magic spell you cast #
+就是玫瑰人生  # This is la vie en rose #
+你吻我时 天也赞叹  # When you kiss me heaven sighs #
+即使闭上双眼  # And though I close my eyes #
+也能看到玫瑰人生  # I see la vie en rose #
+当你紧抱我在胸口  # When you press me to your heart #
+我仿佛在另个世界  # I'm in a world apart #
+那里遍地玫瑰绽放  # A world where roses bloom #
+你轻言细语时 天使便会歌咏  # And when you speak Angels sing from above #
+你平日的话语 似乎都是动听的情歌  # Everyday words seem to turn into love songs #
+(口哨～)
+(咳咳～)
+取消
+@#
+$%
+呃?
+&*
+(英语)指令?(问瓦力接受何种语言的指令)  Directive?
+哦～ (听懂了)  Oh!
+指令?    哦! (以为受到指令去执行预设功能)  Directive?
+塔塔～  Ta  da!
+指...令? (是你给我的指令吗?)    指令? (这就是你的功能?)  Directive?    Directive?
+功能分类完毕(是扫垃圾的)  Classified.
+姓名?(突然又好奇)  Name?
+瓦...力  WALL  E.
+瓦力?  WALL  E.
+瓦力  WALL  E.
+伊...娃  EVE.
+伊...    伊娃  EVE.
+伊...啊...  E... Ah!
+伊娃  "EVE. EVE."
+伊娃  EVE.
+伊娃  EVE.
+伊娃  "EVE."
+伊娃  EVE...
+伊...伊...娃  EVE! EVE! EVE!
+瓦力...瓦力  WALL  E! WALL  E!
+伊娃  EVE.
+这是我写的一首小歌  # Here is a little song I wrote #
+一个字一个音跟我唱... 别担心  #... note for note Don't worry #
+开心点  # Be happy #
+给  Here.
+瞧  Look.
+啪  Pop.
+(你来)啪  You pop.
+哦～ 什么?  Oops.
+周日时就别惦记着周一  # Monday in your Sunday #
+酷吧?    嗯～
+穿上盛装就别想着工作  # No Monday in your Sunday clothes #
+沮丧时就穿上周日的盛装  # Put on your Sunday clothes when you feel down and out #
+逛逛街 照张相  # Strut down the street and have your picture took #
+穿着轻松 就会让你心情轻松  # Dressed like a dream Your spirits seem to turn about #
+周日的阳光必能保证  # That Sunday shine is a certain sign #
+你的心情就像穿着一样光鲜  # That you feel as fine as you look #
+...从头到脚  #... new down to your toes #
+拿出你的装饰品 穿上你的名牌皮鞋  # Get out your feathers Your patent leathers #
+你的镶珠领夹 皮带 和领结  # Your beads and buckles and bows #
+瓦力?  WALL  E?
+那就是  # And that is all #
+爱的真谛  # that love's about #
+我们将会忆起  # And we'll recall #
+当时光流逝后  # When time runs out #
+只消...  # That it only #
+片刻  # Took a moment #
+坠入情网  # to be loved #
+伊娃  EVE!
+一世  # A whole life #
+之爱  # long #
+伊娃?  EVE!
+伊娃  EVE?
+伊娃  EVE!
+伊娃  EVE!
+伊...伊...娃  EVE!
+伊娃  EVE!
+伊娃  EVE!
+伊娃  EVE!
+伊娃  EVE!
+不  No!
+伊娃  EVE.
+伊娃  EVE.
+伊娃  EVE.
+外来污染物  Foreign contaminant.
+外来污染物  Foreign contaminant. Whoa!
+伊娃  EVE!
+外来污染物  Foreign contaminant.
+伊娃  EVE.
+伊娃  EVE!
+我一个早上都没出门  I've been in my cabin all morning,
+不如去高球场挥几杆 打几个虚拟球去太空吧  so let's hover over to the driving range and hit a few virtual balls into space.
+不要 昨天打过了 不想再去  No, we did that yesterday. I don't want to do that.
+那你想干什么呢?    我也不知道 随便吧  Well, then what do you want to do?    I don't know. Something.
+找个24小时的地方...    我没嫉妒 因为...
+才不是那样...    听着 同样的话题吵烦了...  Look, I'm tired of having the same argument over and over.
+如果你找不到窍门 那是绝对抽不中奖的
+机器人 这儿  Bot, over here.
+[欢迎光临 经济娱乐圈]
+我在隧道里 听不清    原来你在这儿  I'm in a tunnel. I can't hear you.    There you are.
+[时间12:15 气温22°C]
+在巨购...  Buy N Large.
+一切都让您满意  Everything you need to be happy.
+我们重视您的生活  Your day is very important to us.
+喂～ 饮料机器人  Hey, drink  bot.
+这儿 来拿杯子  Here, take the cup. Hey, take the cup!
+请勿乱动  Please remain stationary.
+服务员会立刻为您效劳  A service  bot will be here to assist you momentarily.
+服务员 哈啰～  Stewards! Hello!
+请勿乱动    帮我  Please remain stationary.    Help.
+服务员会立刻为您效劳  A service  bot will be here to assist you momentarily.
+你谁? 怎么回事?  What's that? What's going on?
+瓦力  WALL  E.
+约翰    伊娃?  John.    EVE?
+呃～ 不是 我是约翰  Uh, no. John.
+伊娃  EVE!
+再见 瓦力  Bye, WALL  E.
+"A" 代表真理号 你们温暖的家  "A" is for Axiom, your home sweet home.
+"B" 代表巨购 你们最好的朋友  "B" is for Buy N Large, your very best friend.
+吃杯装午餐时间到了  Time for lunch in a cup.
+感觉出的美丽  Feel beautiful.
+你焕然一新 棒极了    你看起来真光鲜  It's the new you. Stunning.    You look great.
+亲爱的 我知道  I know, honey. Men.    Men.
+真理号的购物旅客请注意 请试试蓝色  Attention, Axiom shoppers. Try blue.
+替换红色的新色哟  It's the new red.
+我爱蓝色  Love blue.
+约会?  Date?
+说到这个 我就有气  Don't get me started on the date.
+每次虚拟约会 都糟糕透了  Every holo  date I have been on has been a virtual disaster.
+如果我能遇见一个不肤浅的人就够了  If I could just meet one, one who wasn't so superficial.
+好男人都死光了  There are no good men out there.
+我知道 我知道 因为...  I know. I know because I've...
+怎么?  What the...
+嘿～ 瓦力  Yoo  hoo. WALL  E.
+呃...  Uh...
+玛莉    伊娃  Mary.    EVE.
+呃? 噢～  Huh? Oh!
+呃～ 嗯～ 好 请过  Oh! Oh. Um, sure. You go ahead.
+伊娃  EVE.
+遮阳伞  Shade!
+不知道我们还有游泳池  I didn't know we had a pool!
+舰长 请到指挥舱  Captain, you are needed on the bridge.
+我正在操作仪表  All hands on deck!
+早安  Morning.
+修面吗?  Just a trim?
+夜色中寻欢作乐  #... find adventure in the evening air #
+嗯～ 我知道 亲爱的 我知道  I see. I know, honey. I know.
+我很好 你看起来真光鲜  I'm good, I am good. You look gorgeous.
+敞篷马车  #... horsedrawn open cars #
+长官?    咖啡  Sir?    Coffee.
+长官 年度...  Sir, the annual...
+自控 照规矩 该做的先做  Protocol, Auto. First things first.
+电脑 现况报告  Computer, status report.
+机械系统    没变  Mechanical systems.    Unchanged.
+反应炉核心温度    没变  Reactor core temperature.    Unchanged.
+旅客人数    没变  Passenger count.    Unchanged.
+自助餐供应    没变  Regenerative food buffet.    Unchanged.
+按摩浴缸酸碱度    没变  Jacuzzi pH balance.    Unchanged.
+大气状况    没变  Atmospheric conditions.    Unchanged.
+舰长    换洗衣物总量  Captain.    Laundry service volume.
+没变    自控 该你了  Unchanged.    Okay, Auto.
+长官 年度生物勘测...    下午12点半啦  Sir, the annual reconnaissance...    12:30!
+自控 你怎么不早叫我起来晨宣?  Auto, why didn't you wake me for morning announcements?
+老实说 这是我唯一能亲手做的事  Honestly, it's the one thing I get to do on this ship.
+大家早安  Well, good morning, everybody,
+今天是各位搭乘真理号 第255 642天  and welcome to day 255,642 aboard the Axiom.
+如往常一样 今天天气和煦 气温22° 阳光普照  As always, the weather is a balmy 72 degrees and sunny and...
+根据航行日志 今天是我们 原本五年旅程的  Oh, I see the ship's log is showing that today is our 700th anniversary
+第700年纪念日  of our five  year cruise.
+如果我们的开国先贤们知道 700年后一切照旧  Well, I'm sure our forefathers would be proud to know that 700 years later
+一定会很高兴  we'd be doing the exact same thing they were doing.
+球来了 小心  Fore!
+别忘了下次用餐时 点一客免费的  So, be sure next mealtime to ask for your "free
+700年纪念小蛋糕  "septuacentennial cupcake in a cup."
+哇～ 真好  Wow, look at that!
+同时 今天我们有...  Also today we have a...
+喂 自控 闪灯干嘛?  Hey, Auto, what's that flashing button?
+舰长 探测机器人有结果  Captain, Probe One has returned positive.
+有结果?  Positive?
+伊娃  EVE.
+以前从来  But no probe's
+没有结果的呀  ever come back positive before.
+巨购～  # Buy N Large #
+舰长 你好 恭喜  Greetings and congratulations, Captain.
+如果你看到我  If you are seeing this,
+外星植物探测机器人  that means your Extraterrestrial Vegetation Evaluator,
+也就是"伊娃" 已经从地球回来  or EVE probe, has returned from Earth
+并确切带回一个 能行光合作用的植物样本  with a confirmed specimen of ongoing photosynthesis.
+没错 这表示该回地球家的时间到了  That's right. It means it's time to go back home.
+家? 我们要回去?  Home? We're going back?
+现在地球已经恢复到能生存的状态  Now that Earth has been restored to a life  sustaining status,
+哇～ 终于可以重新殖民地球了  by golly, we can begin Operation Recolonize.
+按照手册的指示  Simply follow this manual's instructions
+将样本放进本舰的立体侦测仪  to place the plant in your ship's holo  detector
+真理号就会自动导航回地球  and the Axiom will immediately navigate your return to Earth.
+就这么简单    呃～  It's that easy.    Huh!
+由于太空重力较小  Now, due to the effects of microgravity,
+你和乘客们会有  you and your passengers may have suffered some
+轻微骨质流失  slight bone loss.
+但我确信 你们在舰上的慢跑道上 跑个几圈  But I'm sure a few laps around the ship's jogging track
+就能恢复健康体态  will get you back in shape in no time.
+我们有慢跑道?  We have a jogging track?
+如果你还有疑问  If you have any further questions,
+就参考操作手册  just consult your operation manual.
+一会儿回家见  See you back home real soon.
+操作首策(以为是机器人名)  "Operate Manuel."
+首策 宣读指令  Manuel, relay instructions.
+首策?  Manuel?
+哇～ 瞧这玩意儿?  Wow. Will you look at that?
+瞧瞧  Let's see.
+伊娃  EVE.
+瓦力  WALL  E!
+伊娃  EVE.
+嗯～ 打开瞧瞧  Well, let's open her up.
+第一步 语音指令 "确定样本"  "Step one. Voice command, 'Confirm acquisition."'
+确定样本中  Confirm acquisition.    Ooh!
+语音授权  Voice authorization required.
+呃...    (录音)呃...  Uh...    Uh...
+接受  Accepted.
+什么?    植物  Where's the thingy?    Plant.
+植物 呃～我知道 去哪儿啦?  Plant. Right. Right. Where is it?
+或许我们漏了哪个步骤?  Maybe we missed a step.
+示范如何改变...    植物?  Show me how you change...    Plant.
+瓦力  Okay.    WALL  E.
+瓦力  WALL  E!
+伊娃?    植物  EVE?    Plant!
+何不再扫描她一次确认?  Why don't you scan her to be sure?
+没有样本 探测机器人记忆损坏  Contains no specimen. Probe's memory is faulty.
+所以我们不用回地球咯?    不用  So then, we're not going to Earth?    Negative.
+一切照旧 对吧?  I guess things go back to normal, huh?
+是的 舰长  Correct, Captain.
+嗯 假警报    假警报  Well, false alarm!    False alarm.
+探测机器人一定坏了  The probe must be defective.
+打杂 送她去修理厂  GO  4, send her to the repair ward,
+送去诊断 确定她是坏...  and have them run diagnostics on her. Make sure she's not...
+瓦力  WALL  E.
+去把...瓦力...清干净  Have, uh, WALL  E cleaned.
+你好  Yoo  hoo!
+伊娃  EVE.
+分析  Analyze.
+分析结果：外来污染物  Analysis. Foreign contaminant.
+三相物质  Substance is a three  phase system
+由多种自然物质组成的固体  composed of various combinations of naturally derived solids.
+一般称作 "泥土" "污泥" "地球土壤"  Subject is most commonly referred to as soil, dirt, or earth.
+"地球"?  "Earth"?
+嗯  Hmm.
+定义 "地球"  Define "earth."
+地球 世界的表层  Earth, the surface of the world
+不同于"天"和"海"  as distinct from the sky or sea.
+定义 "海"  Define "sea."
+海 一大片咸水  Sea, an expanse of salt water
+覆盖大部分地表 并环绕陆地  that covers most of the Earth's surface and surrounds its landmasses.
+外来污染物  Foreign contaminant.
+伊娃  EVE.
+修面?  Just a trim?
+你看起来真光鲜  You look gorgeous.
+小心球  Fore!
+小心球  Fore!
+小心球  Fore!
+伊...  EVE!
+清场完成  Clear, clear, clear.
+伊娃 伊娃  EVE! EVE!
+瓦力  WALL  E.
+瓦力  WALL  E!
+瓦力  WALL  E!
+糟糕  Oh, my.
+停  Halt!
+瓦力  WALL  E!
+当心流氓机器人  Caution. Rogue robots.
+当心流氓机器人  Caution. Rogue robots.
+当心流氓机器人  Caution. Rogue robots.
+瓦力  WALL  E!
+停 停  Halt! Halt!
+当心流氓机器人  Caution. Rogue robots.
+瓦力  WALL  E!
+安全  Clear.
+当心流氓机器人  Caution. Rogue robots.
+伊娃  EVE.
+伊娃  EVE?
+地球  Earth.
+地球  Earth.
+指令(我有任务在身)  Directive.
+瓦力  WALL  E.
+瓦力  WALL  E!
+植物  Plant!
+瓦力  WALL  E.
+伊娃    瓦力  EVE.    WALL  E!
+正常航速  Cruising speed.
+可以在舱内自由活动  You are now free to move about the cabin.
+20秒后自毁  Twenty seconds to self  destruct.
+10秒后自毁  Ten seconds to self  destruct.
+10 9 8 7  Ten, nine, eight, seven,
+6 5 4  six, five, four,
+3  Three,
+2...  Two...
+不要 不要  No. No.
+伊...娃  EVE!
+瓦力  WALL  E!
+瓦力  WALL  E!
+伊娃  EVE.
+瓦力  WALL  E.
+伊娃  EVE.
+瓦力  WALL  E!
+瓦力  WALL  E.
+Whee!
+好多星星啊  Oh, so many stars.
+喂 喂 那不是谁吗?    怎么...  Hey! Hey! That's what's  his  name!    Hey! What the...
+看...看那个    呃? 什么?  Look! Look at that.    Huh? What?
+我知道他叫 ... 瓦力  Hey. I know that guy. It's, uh, WALL  E.
+喂～瓦力 我是你朋友约翰    嗨～瓦力  Hey, WALL  E! It's your buddy John.    Hi, WALL  E!
+嗨  Hi.
+嗨  Hi.
+定义 "舞会"  Define "hoedown."
+舞会 社交联谊  Hoedown, a social gathering
+众人聚集跳舞作乐  at which lively dancing would take place.
+自控 地球真奇妙 这些地方叫 "农田"  Auto, Earth is amazing! These are called "farms."
+人类在上面播种 然后灌溉  Humans would put seeds in the ground, pour water on them,
+然后就会长出食物 例如比萨  and they grow food, like pizza.
+晚安 舰长  Good night, Captain.
+电脑～  Psst! Computer.
+定义 "跳舞"  Define "dancing."
+跳舞 两人一起连串动作  Dancing, a series of movements involving two partners
+随着音乐的节奏速度而动  where speed and rhythm match harmoniously with music.
+伊娃  EVE.
+回去吧  Home.
+外舱甲板即将关闭  The lido deck is now closing. The lido deck is now closing.
+别 别    来阻止我呀  Stop that.    Make me.
+我以前不知道还有泳池  I didn't know we had a pool.
+不准泼水 不准潜水  No splashing. No diving.
+再说呀～    不准泼水 不准...  Oh, go on.    No splashing. No...
+[上缴高层领导]
+伊娃  EVE.
+只消片刻  #... it only takes a moment #
+指令  Directive.
+准备着陆  Prepare for landing.
+各位 我们抵达了  "We're here, everybody."
+"耶～ 舰长 我们到家了 家真美"  "Yay, Captain! Captain, we're home! It's so beautiful!"
+很高兴能替大家效劳  "No. It's nothing. I was pleased to do this.
+"是为人民服务 不是为自己"  "It's all about you people. It's not about me."
+怎么?  How?
+你是怎么找到的?  How did you find it?
+我们终于可以回家了  We can go back home! For the first time!
+那里情况如何?  What's it like now?    Oh!
+别 别告诉我 让我自己来看  No, no, no. Don't tell me. I want to see for myself.
+等等 那看起来不像地球  Wait. That doesn't look like Earth.
+蓝天呢?  Where's the blue sky?
+绿地呢?  Where's the grass?
+沮丧时就穿上周日的盛装  #... Sunday clothes when you feel down and out #
+我知道那首歌  I know that song.
+逛逛街 照张相  # Strut down the street and have your picture took #
+他们在...  They're, um,
+跳舞  dancing.
+对 跳舞  Yes, dancing.
+周日的阳光必能保证 你的心情就像穿着一样光鲜  # That Sunday shine is a certain sign That you feel as fine as you look #
+在你洋伞下 ...  # Beneath your parasol... #
+小东西 你终于历劫归来 对吧? 你没放弃 对吧?  You made it somehow, huh, little guy? You didn't give up, did you?
+噢 不要  Okay, then. Come on.
+等等  Wait a minute.
+当时光流逝后  #... when time runs out #
+只消片刻  # That it only... #
+[启动安全监视]
+伊娃  EVE?
+伊娃  EVE!
+瓦力  WALL  E.
+伊娃  EVE.
+伊娃  EVE.
+伊娃  EVE.
+真可怜  Pathetic.
+伊娃  EVE.
+伊娃  EVE!
+外来污染物  Foreign contaminant.
+行了 小家伙  There you go, little guy.
+你大老远地来喝口水  You came a long way for a drink of water.
+你就是要人呵护 对吧...  Just needed someone to look after you, that's...
+我们必须回去  We have to go back.
+自控 过来    是 长官  Auto, come down here.    Aye, aye, sir.
+瓦力  WALL  E.
+瓦力  WALL  E.
+自控 伊娃找回了植物 启动立体侦测仪  Auto, EVE found the plant. Fire up the holo  detector.
+舰长 不麻烦您 让我来  Not necessary, Captain. You may give it to me.
+我说 这次我自个儿来    舰长  You know what? I should do it myself.    Captain.
+长官 我坚持你得把它给我  Sir, I insist you give me the plant.
+自控 让开    我们不能回家  Auto, get out of my way.    We cannot go home.
+你说什么? 为什么不能?    这是机密 舰长  What are you talking about? Why not?    That is classified, Captain.
+把植物给我    "机密"是什么意思?  Give me the plant.    What do you mean, "classified"?
+在我面前 不准保留机密  You don't keep a secret from the captain.
+把植物给我  Give me the plant.
+告诉我机密    那植物  Tell me what's classified.    The plant.
+快说 这是命令  Tell me, Auto! That's an order.
+是 长官  Aye, aye, sir.
+巨购是您的超级购物中心 要什么有什么  # Buy N Large is your superstore We got all you need #
+关掉音乐  Just cut it off, will you?
+呃～ 自动导航系统 有坏消息  Hey, there, autopilots. Got some bad news.
+呃...  Um...
+清理计划  Operation Cleanup has,
+失败了  well, failed.
+毒性污染度升高 生物已无法...  Wouldn't you know, rising toxicity levels have made life
+在地球生存  unsustainable on Earth.
+"无法生存"? 什么?  "Unsustainable"? What?
+很不幸 我们不得不取消重新殖民计划  Darn it all, we're going to have to cancel Operation Recolonize.
+所以...  So,
+不要改变航向  Just stay the course.
+回去解决问题...  Rather than try and fix this problem,
+不如就留在太空吧  it'll just be easier for everyone to remain in space.
+"不如"?  "Easier"?
+总统先生?    我认为...  Mr. President?    I think...
+什么?    该结束了  Huh?    Sir, time to go.
+好 我宣布取消"A113"号命令  Okay. I'm giving Override Directive A 113.
+完全进入自动导航  Go to full autopilot.
+不要返回地球  Take control of everything, and do not return to Earth.
+重复 不要返回地球  Repeat, do not return to Earth.
+溜之大吉吧  Let's get the heck out of here.
+现在把植物给我  Now, the plant.
+不 等等  No. Wait a minute.
+电脑 那讯息是什么时候传到这?  Computer, when was that message sent out to the Axiom?
+2110年收到  Message received in the year 2110.
+几乎是...700年前啊  That's... That's nearly 700 years ago!
+自控 现在情况不同 我们必须回去  Auto, things have changed! We've got to go back.
+长官 命令是"不要返回地球"  Sir, orders are "do not return to Earth."
+但现在环境已经适合生存 你看这绿色植物还能生长  But life is sustainable now. Look at this plant. Green and growing.
+活生生地证明他错了    这无关 舰长  It's living proof he was wrong.    Irrelevant, Captain.
+什么? 完全有关 那儿是我们的家  What? It's completely relevant! Out there is our home.
+家 自控  Home, Auto.
+现在那儿有麻烦 我怎能坐视不管  And it's in trouble. I can't just sit here and do nothing.
+我这辈子都坐着、视着  That's all I've ever done.
+却什么都没管过 这浑蛋舰上的人统统跟我一样  That's all anyone on this blasted ship has ever done. Nothing!
+在舰上你能活下去  On the Axiom you will survive.
+我不光要活着 我要有人生    你必须服从我的指令  I don't want to survive. I want to live!    Must follow my directive.
+我是真理号的舰长  I'm the captain of the Axiom.
+我们今天就回家  We are going home today.
+打杂?  GO  4?
+喂 那不是...  Hey! That's not...
+这是叛变 伊娃 逮捕它  This is mutiny! EVE, arrest him.
+伊娃 你立刻直接将植物 放进立体检测仪中  EVE, you are to put this plant straight in the holo  detector.
+不要  No!
+伊娃?    瓦力  EVE?    WALL  E!
+伊娃  EVE!
+啊    瓦力 植物  Oh!    WALL  E, the plant!
+瓦力    快扔过来  WALL  E!    Over here. Throw it.
+伊娃  EVE!
+把植物给我  Give me the plant.
+瓦力  WALL  E!
+瓦力  WALL  E!
+通讯全部切断  All communications are terminated.
+你只能待在指挥舱  You are confined to quarters.
+不要 你叛变  No! Mutiny!
+叛变  Mutiny!
+[重新启动]
+瓦力?  WALL  E?
+注意 启动真空清除  Caution. Activating airlock disposal.
+瓦力  WALL  E!
+即将启动真空清除  Activating airlock disposal.
+瓦力?  WALL  E?
+伊娃  EVE.
+瓦力  WALL  E!
+注意 即将启动真空清除  Caution. Activating airlock disposal.
+即将启动真空清除  Activating airlock disposal.
+瓦力  WALL  E!
+外来污染物  Foreign contaminant.
+瓦力  WALL  E.
+完全清除干净  All clean. All clean.
+我叫瓦力  WALL  E.
+我是毛毛  M  O.
+毛毛?    毛毛  M  O?    M  O.
+毛毛  M  O.
+指令  Directive.
+指令  Directive.
+地球  Earth.
+地球  Earth.
+地球    地球  Earth.    Earth.
+地球? 地球  Earth? Earth!
+毛毛    瓦力  M  O.    WALL  E!
+[当心]
+不对  Wrong.
+[维修储物室]
+[当心]
+别动 我们目前有状况...  Please hold. We are currently having...
+伊娃  EVE!
+糟糕  Whoops.
+当心 流氓机器人  Caution. Rogue robots.
+这款式很适合你  That style suits you.
+安全  Clear.
+当心 流氓机器人  Caution. Rogue robots.
+当心 流氓机器人  Caution. Rogue robots.
+不可能  Not possible.    Caution. Rogue robots.
+自控 自控  Auto! Auto!
+叛变 叛变  Mutiny. Mutiny.
+你这蠢蛋  Stupid wheel.
+当心 流氓机器人  Caution. Rogue robots.
+当心 流氓机器人  Caution. Rogue robots.
+当心 流氓机器人  Caution. Rogue robots.
+植物  The plant!
+现在看谁还(有电)能  We'll see who's powerless now.
+测试 测试 启动了吗?  Testing, testing. Is this thing on?
+我是舰长 被锁在指挥舱  This is the captain. I am locked in my room.
+伊娃 瓦力 把植物带去外舱甲板  EVE, WALL  E, bring the plant to the lido deck.
+我已经启动了立体侦测仪 现在 快  I'll have activated the holo  detector. Now, hurry.
+自控可能很快会把我切断...    停  Auto's probably going to cut me off...    Halt.
+停  Halt.
+哇～  Oh, my.
+安全  Clear.
+停 停  Halt, halt.
+[舰长公告]
+自控 看我有什么    不可能  Look what I got, Auto.    Not possible.
+没错 就是这株植物  That's right. The plant.
+想要 就来拿! 死鱼眼  You want it? Come and get it, blinky.
+糟糕  No.
+舰长 舰长  Captain? Captain?
+我们走吧  Let go.
+放手    我太重了 对吧?  Let go.    Too heavy for you? Huh?
+下来  Get off.
+别想甩掉我 独眼龙  You're not getting away from me, one  eye.
+下来    就这么点儿本事?  Get off.    Is that all you got?
+停  Halt.
+再近点儿    住手  That's it. A little closer.    Cease and desist.
+不妙    成啦  Not good.    Got you.
+保持冷静 保持冷静  Remain calm. Remain calm.
+各位先生女士 我是舰长  Ladies and gentlemen, this is your captain speaking.
+我们的自动导航系统 出了点小毛病  We're having a slight malfunction with the autopilot.
+请保持冷静  Please remain calm.
+够了  Enough.
+怎么啦? 约翰?  Hey. What? John?
+不 不 不～  No! No, no, no!
+抓住你了  I gotcha!
+约翰 准备迎接孩子们  John, get ready to have some kids!
+小心    啊～  Look out! Ah!
+不好  No.
+瓦力  WALL  E!
+不好  No!
+糟糕  Oh, no!
+自控  Auto?
+瓦力  WALL  E!
+自控 你被解除职务  Auto, you are relieved of duty.
+自控 你被解除职务  Auto, you are relieved of duty.
+不要  No.
+植物 植物  Plant! Plant!
+外来污染物  Foreign contaminant.
+植物    伊娃  Plant! EVE!
+植物来源认证通过  Plant origin verified.
+瓦力  WALL  E.
+航道转向地球  Course set for Earth.
+10秒进入超跃度 9...  Ten seconds to hyper  jump. Nine...
+不要 ... 8 ...  No. ...eight...
+瓦力 ... 7 6 5 4 ...  WALL  E! ...seven, six, five, four...
+不好 瓦力  Oh, no. WALL  E.
+... 3 2 1 0  ...three, two, one, zero.
+瓦力  WALL  E!
+瓦力  WALL  E.
+伊娃  EVE!
+Huh?
+瓦力  WALL  E.
+伊娃  EVE.
+瓦力  WALL  E?
+沮丧时就穿上周日的盛装  # Put on your Sunday clothes when you feel down and out #
+瓦力?  WALL  E?
+瓦力  WALL  E.
+瓦力  WALL  E!
+伊娃    瓦力  EVE?    WALL  E?
+伊娃  EVE!
+那就是  # And that is all #
+爱的真谛  # That love's about #
+哇～    不会吧  Whee!    You're kidding!
+走开 走开  Go, go, go. Go, go.
+当时光流逝后 我们将会忆起  # And we'll recall When time runs out #
+这叫做种树  This is called farming!
+孩子们 将来你们可以种各种树  You kids are going to grow all kinds of plants.
+蔬菜树 比萨树  Vegetable plants. Pizza plants!
+回家真好  It's good to be home!
+只消片刻  # Took a moment #
+坠入情网  # to be loved #
+一世之爱  # a whole life #
+# long #
+你知道你的双脚被系住  # Did you think that your feet had been bound #
+被什么引力拉至地表?  # By what gravity brings to the ground? #
+你觉得被自己选择的未来所迷惑吗?  # Did you feel you were tricked by the future you picked? #
+那么 下来吧  # Well, come on down #
+所有的自然规律在高空都不适用  # All these rules don't apply When you're high in the sky #
+所以 下来吧  # So come on down #
+下来吧  # Come on down #
+你下到地面  # We're coming down to the ground #
+没有比这儿更好的地方  # There's no better place to go #
+我们上有山雪  # We got snow up on the mountains #
+我们下有河川  # We got rivers down below #
+我们要下到地面  # We're coming down to the ground #
+我们听到树梢的鸟语  # We hear the birds sing in the trees #
+大地将被呵护  # And the land will be looked after #
+我们在微风中播撒种子  # We'll send the seeds out in the breeze #
+你觉得逃脱了世俗  # Did you think you'd escaped from routine #
+用改变剧本与场景的方法?  # By changing the script and the scene? #
+不管你是什么样的人  # Despite all you made of it #
+你总是害怕改变  # You're always afraid of the change #
+其实你内心很有胆识  # You've got a lot on your chest #
+就来当我的客人吧  # Well, you can come as my guest #
+那么 下来吧  # So come on down #
+下来吧  # Come on down #
+我们将下到地面  # We're coming down to the ground #
+没有比这儿更好的地方  # There's no better place to go #
+我们上有山雪  # We got snow up on the mountains #
+我们下有河川  # We got rivers down below #
+我们要下到地面  # We're coming down to the ground #
+我们听到树梢的鸟语  # We hear the birds sing in the trees #
+大地将被呵护  # And the land will be looked after #
+我们在微风中播撒种子  # We'll send the seeds out in the breeze #
+就像海里的鱼儿  # Like the fish in the ocean #
+海也是我们的家  # We felt at home in the sea #
+我们学习在美好的土地上生活  # We learned to live off the good land #
+我们学习爬树  # We learned to climb up a tree #
+我们双腿站着成长  # Then we got up on two legs #
+但我们还想飞  # But we wanted to fly #
+当我们把家弄乱了  # And when we messed up our homeland #
+却远走高飞  # We set sail for the sky #
+我们要下到地面  # We're coming down to the ground #
+没有比这儿更好的地方  # There's no better place to go #
+我们上有山雪  # We got snow up on the mountains #
+我们下有河川  # We got rivers down below #
+我们要下到地面  # We're coming down to the ground #
+我们听到树梢的鸟语  # We hear the birds sing in the trees #
+大地将被呵护  # And the land will be looked after #
+我们在微风中播撒种子  # We'll send the seeds out in the breeze #
+我们要下来  # We're coming down #
+下到地球上  # Coming down to Earth #
+就像出生的婴儿  # Like babies at birth #
+来到这世界  # Coming down to Earth #
+我们知是非和轻重  # We define new priorities #
+这些是优点和美德  # These are extraordinary qualities #
+我们要下到地面  # We're coming down to the ground #
+没有比这儿更好的地方  # There's no better place to go #
+我们上有山雪  # We got snow up on the mountains #
+我们下有河川  # We got rivers down below #
+我们要下到地面  # We're coming down to the ground #
+我们听到树梢的鸟语#  # We hear the birds sing in the trees #
+大地将被呵护  # And the land will be looked after #
+我们在微风中播撒种子  # We send the seeds out in the breeze #
+我们要下到地面  # We're coming down to the ground #
+没有比这儿更好的地方  # There's no better place to go #
+我们上有山雪  # We got snow up on the mountains #
+我们下有河川  # We got rivers down below #
+我们要下到地面  # We're coming down to the ground #
+我们听到树梢的鸟语  # We hear the birds sing in the trees #
+大地将被呵护  # And the land will be looked after #
+我们在微风中播撒种子  # We send the seeds out in the breeze #
+我们知是非和轻重  # We define new priorities #
+这些是优点和美德  # These are extraordinary qualities #
+能在地球上找到  # To find on Earth #
+能在地球上找到  # To find on Earth #
+能在地球上找到  # To find on Earth #
+
