@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动画电影台词学习 — 索引</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --surface2: #1c2129;
+  --border: #21262d; --border-hover: #30363d; --border2: #30363d;
+  --accent: #f0883e; --accent2: #e94560;
+  --text: #e6edf3; --text2: #8b949e; --text3: #484f58;
+  --green: #3fb950; --red: #f85149;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  background: var(--bg); color: var(--text); min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+/* 头部 */
+.header { text-align: center; padding: 48px 16px 32px; }
+.header h1 {
+  font-size: clamp(24px, 5vw, 36px); font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), #f78166, var(--accent2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.02em; margin-bottom: 8px;
+}
+.header .sub { color: var(--text2); font-size: 14px; letter-spacing: 0.04em; }
+.stats-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+.stats-row .chip {
+  font-size: 12px; color: var(--text2); background: var(--surface);
+  border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px;
+  font-variant-numeric: tabular-nums;
+}
+.stats-row .chip b { color: var(--accent); font-weight: 700; }
+.stats-row .chip.vip-chip {
+  background: linear-gradient(135deg, rgba(240,136,62,0.15), rgba(233,69,96,0.15));
+  border: 1px solid rgba(240,136,62,0.4); cursor: pointer; transition: all .2s;
+}
+.stats-row .chip.vip-chip:hover { filter: brightness(1.2); }
+.stats-row .chip.vip-chip b { color: #f0c040; }
+/* 搜索 */
+.search-wrap { max-width: 600px; margin: 0 auto 32px; padding: 0 16px; }
+.search-wrap input {
+  width: 100%; padding: 12px 18px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  font-size: 15px; transition: all .25s; outline: none;
+  font-family: inherit;
+}
+.search-wrap input::placeholder { color: var(--text3); }
+.search-wrap input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(240,136,62,0.12); }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 16px 48px; }
+/* 网格 */
+.grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+}
+/* 卡片 */
+.card {
+  background: var(--surface); border-radius: 14px; overflow: hidden;
+  text-decoration: none; color: inherit; transition: all .35s cubic-bezier(.4,0,.2,1);
+  border: 1px solid var(--border); display: flex; flex-direction: column;
+  position: relative;
+}
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.45), 0 0 0 1px rgba(240,136,62,0.15);
+}
+.card:active { transform: scale(0.985); transition: all .1s; }
+.card .poster-wrap {
+  width: 100%; aspect-ratio: 2/3; overflow: hidden;
+  background: var(--surface2); position: relative;
+}
+.card .poster-wrap img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .5s cubic-bezier(.4,0,.2,1);
+}
+.card:hover .poster-wrap img { transform: scale(1.06); }
+/* 缺失海报占位 */
+.card .no-poster {
+  width: 100%; height: 100%; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; color: var(--text3);
+  gap: 8px;
+}
+.card .no-poster .movie-icon { font-size: 42px; opacity: 0.5; }
+.card .no-poster .movie-initials {
+  font-size: 13px; font-weight: 700; letter-spacing: 0.12em; opacity: 0.35;
+  text-transform: uppercase;
+}
+/* 悬停覆盖层 */
+.card .hover-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(13,17,23,0.94) 0%, rgba(13,17,23,0.3) 50%, transparent 100%);
+  opacity: 0; transition: opacity .35s ease;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 16px; gap: 10px;
+}
+.card:hover .hover-overlay { opacity: 1; }
+.hover-overlay .action-btn {
+  display: block; width: 100%; padding: 9px 0; border-radius: 8px;
+  background: var(--accent); color: #fff; border: none;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  text-align: center; letter-spacing: 0.03em;
+  transition: all .2s; text-decoration: none;
+}
+.hover-overlay .action-btn:hover { background: #f69a50; filter: brightness(1.1); }
+/* 角标 */
+.card .badge {
+  position: absolute; top: 10px; right: 10px;
+  padding: 4px 10px; border-radius: 6px;
+  font-size: 11px; font-weight: 700; z-index: 2; pointer-events: none;
+  letter-spacing: 0.03em; backdrop-filter: blur(6px);
+}
+.card .badge.locked { background: rgba(0,0,0,0.75); color: #f0883e; border: 1px solid rgba(240,136,62,0.5); }
+.card .badge.unlocked { background: rgba(63,185,80,0.35); color: #7ee787; border: 1px solid rgba(63,185,80,0.55); }
+/* 信息区 */
+.card .info { padding: 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.card .id { font-size: 10px; color: var(--text3); font-family: "SF Mono","Cascadia Code",monospace; letter-spacing: 0.06em; }
+.card .title {
+  font-size: 15px; font-weight: 700; color: var(--text);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.card:hover .title { color: var(--accent); }
+.card .meta-row { display: flex; gap: 12px; font-size: 12px; color: var(--text2); margin-top: 2px; }
+.card .meta-row span { display: flex; align-items: center; gap: 4px; }
+.meta-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--text3); display: inline-block; }
+/* 入场动画 */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card { animation: fadeUp .5s ease both; }
+.card:nth-child(1) { animation-delay: 0s; }
+.card:nth-child(2) { animation-delay: .03s; }
+.card:nth-child(3) { animation-delay: .06s; }
+.card:nth-child(4) { animation-delay: .09s; }
+.card:nth-child(5) { animation-delay: .12s; }
+.card:nth-child(6) { animation-delay: .15s; }
+.card:nth-child(7) { animation-delay: .18s; }
+.card:nth-child(8) { animation-delay: .21s; }
+/* 滚动条 */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 3px; }
+footer { text-align: center; color: var(--text3); font-size: 11px; padding: 32px 0; letter-spacing: 0.04em; }
+/* 会员弹窗 */
+.vip-modal {
+  display: none; position: fixed; z-index: 9999; inset: 0;
+  background: rgba(0,0,0,0.72); backdrop-filter: blur(8px);
+  align-items: center; justify-content: center;
+}
+.vip-modal.show { display: flex; }
+.vip-box {
+  background: var(--surface); border-radius: 20px; border: 1px solid #30363d;
+  padding: 32px 28px; max-width: 400px; width: 92%;
+  text-align: center; position: relative;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+  animation: modalIn .35s cubic-bezier(.4,0,.2,1);
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.vip-close {
+  position: absolute; top: 14px; right: 18px;
+  background: none; border: none; color: var(--text3);
+  font-size: 24px; cursor: pointer; transition: color .15s; line-height: 1;
+}
+.vip-close:hover { color: var(--text); }
+.vip-box h2 { color: #f0c040; font-size: 21px; font-weight: 800; margin-bottom: 6px; }
+.vip-box .sub { color: var(--text2); font-size: 13px; margin-bottom: 12px; }
+.vip-price { color: #f0c040; font-size: 36px; font-weight: 800; margin: 4px 0 12px; }
+.vip-price small { font-size: 18px; }
+.vip-qr { width: 180px; height: 180px; margin: 0 auto 8px; background: #fff; border-radius: 14px; padding: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+.vip-qr img { width: 100%; height: 100%; object-fit: contain; border-radius: 10px; }
+.vip-hint { font-size: 12px; color: var(--text2); line-height: 1.8; margin: 8px 0; }
+.vip-hint strong { color: #f0c040; }
+.vip-hint .wx-copy {
+  background: var(--surface2); border: 1px solid var(--border);
+  color: #f0c040; padding: 4px 12px; border-radius: 5px; cursor: pointer;
+  font-size: 11px; margin-left: 4px; transition: all .15s;
+}
+.vip-hint .wx-copy:hover { background: var(--border2); }
+.vip-input-row { display: flex; gap: 8px; margin-top: 12px; }
+.vip-input-row input {
+  flex: 1; padding: 12px 16px; border-radius: 10px;
+  border: 1px solid #30363d; background: var(--bg); color: var(--text);
+  font-size: 16px; text-align: center; letter-spacing: 6px;
+  font-family: monospace; outline: none;
+}
+.vip-input-row input:focus { border-color: #f0c040; }
+.vip-input-row input::placeholder { letter-spacing: 0; color: var(--text3); }
+.vip-input-row button {
+  background: linear-gradient(135deg, #f0c040, #d4a017); color: #0d1117;
+  border: none; padding: 12px 22px; border-radius: 10px;
+  cursor: pointer; font-size: 14px; font-weight: 700; white-space: nowrap;
+  transition: all .2s;
+}
+.vip-input-row button:hover { filter: brightness(1.15); }
+.vip-input-row button:disabled { opacity: 0.5; cursor: not-allowed; }
+.vip-result { font-size: 13px; margin-top: 8px; min-height: 20px; font-weight: 600; }
+.vip-result.success { color: var(--green); }
+.vip-result.error { color: var(--red); }
+@media (max-width: 480px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .card .info { padding: 10px 12px; }
+  .card .title { font-size: 13px; }
+  .card .badge { top: 6px; right: 6px; font-size: 10px; padding: 2px 7px; }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>动画电影台词学习</h1>
+  <p class="sub">音频 + 中英对照台词 + 时间轴对齐</p>
+  <div class="stats-row">
+    <span class="chip">已处理 <b id="cnt">97</b> 部</span>
+    <span class="chip">总时长 <b>151.9</b> 小时</span>
+    <span class="chip vip-chip" onclick="showVipModal()">⭐ 申请会员 <b>¥19.9</b></span>
+  </div>
+</div>
+<div class="search-wrap">
+  <input id="search" placeholder="搜索电影标题…" oninput="filt(this.value)">
+</div>
+<div class="container">
+  <div class="grid" id="grid">
+    <a class="card" href="%E7%96%AF%E7%8B%82%E5%8A%A8%E7%89%A9%E5%9F%8E.html" data-title="疯狂动物城" data-id="1">
+      <div class="poster-wrap"><img src="movies/001_%E7%96%AF%E7%8B%82%E5%8A%A8%E7%89%A9%E5%9F%8E/poster.jpg" alt="疯狂动物城" loading="lazy">
+              <div class="badge unlocked">样片免费</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#001</div>
+        <div class="title">疯狂动物城</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>96 分钟</span>
+          <span><i class="meta-dot"></i>1554 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%9C%98%E8%9B%9B%E4%BE%A0%EF%BC%9A%E5%B9%B3%E8%A1%8C%E5%AE%87%E5%AE%99.html" data-title="蜘蛛侠：平行宇宙" data-id="2">
+      <div class="poster-wrap"><img src="movies/002_%E8%9C%98%E8%9B%9B%E4%BE%A0%EF%BC%9A%E5%B9%B3%E8%A1%8C%E5%AE%87%E5%AE%99/poster.jpg" alt="蜘蛛侠：平行宇宙" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#002</div>
+        <div class="title">蜘蛛侠：平行宇宙</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>117 分钟</span>
+          <span><i class="meta-dot"></i>1820 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%AE%88%E6%8A%A4%E8%80%85%E8%81%94%E7%9B%9F.html" data-title="守护者联盟" data-id="3">
+      <div class="poster-wrap"><img src="movies/003_%E5%AE%88%E6%8A%A4%E8%80%85%E8%81%94%E7%9B%9F/poster.jpg" alt="守护者联盟" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#003</div>
+        <div class="title">守护者联盟</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>89 分钟</span>
+          <span><i class="meta-dot"></i>1170 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%B6%85%E8%83%BD%E9%99%86%E6%88%98%E9%98%9F.html" data-title="超能陆战队" data-id="4">
+      <div class="poster-wrap"><img src="movies/004_%E8%B6%85%E8%83%BD%E9%99%86%E6%88%98%E9%98%9F/poster.jpg" alt="超能陆战队" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#004</div>
+        <div class="title">超能陆战队</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>101 分钟</span>
+          <span><i class="meta-dot"></i>1317 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%B5%B7%E6%B4%8B%E5%A5%87%E7%BC%98.html" data-title="海洋奇缘" data-id="5">
+      <div class="poster-wrap"><img src="movies/005_%E6%B5%B7%E6%B4%8B%E5%A5%87%E7%BC%98/poster.jpg" alt="海洋奇缘" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#005</div>
+        <div class="title">海洋奇缘</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>106 分钟</span>
+          <span><i class="meta-dot"></i>1228 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%AC%A2%E4%B9%90%E5%A5%BD%E5%A3%B0%E9%9F%B3.html" data-title="欢乐好声音" data-id="6">
+      <div class="poster-wrap"><img src="movies/006_%E6%AC%A2%E4%B9%90%E5%A5%BD%E5%A3%B0%E9%9F%B3/poster.jpg" alt="欢乐好声音" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#006</div>
+        <div class="title">欢乐好声音</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>99 分钟</span>
+          <span><i class="meta-dot"></i>1927 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98.html" data-title="冰雪奇缘" data-id="7">
+      <div class="poster-wrap"><img src="movies/007_%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98/poster.jpg" alt="冰雪奇缘" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#007</div>
+        <div class="title">冰雪奇缘</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>1385 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%B2%81%E6%BB%A8%E9%80%8A%E6%BC%82%E6%B5%81%E8%AE%B0.html" data-title="鲁滨逊漂流记" data-id="8">
+      <div class="poster-wrap"><img src="movies/008_%E9%B2%81%E6%BB%A8%E9%80%8A%E6%BC%82%E6%B5%81%E8%AE%B0/poster.jpg" alt="鲁滨逊漂流记" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#008</div>
+        <div class="title">鲁滨逊漂流记</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>85 分钟</span>
+          <span><i class="meta-dot"></i>1028 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%BB%BF%E9%87%8E%E4%BB%99%E8%B8%AA.html" data-title="绿野仙踪" data-id="9">
+      <div class="poster-wrap"><img src="movies/009_%E7%BB%BF%E9%87%8E%E4%BB%99%E8%B8%AA/poster.jpg" alt="绿野仙踪" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#009</div>
+        <div class="title">绿野仙踪</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>85 分钟</span>
+          <span><i class="meta-dot"></i>1261 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%AF%BB%E6%A2%A6%E7%8E%AF%E6%B8%B8%E8%AE%B0.html" data-title="寻梦环游记" data-id="10">
+      <div class="poster-wrap"><img src="movies/010_%E5%AF%BB%E6%A2%A6%E7%8E%AF%E6%B8%B8%E8%AE%B0/poster.jpg" alt="寻梦环游记" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#010</div>
+        <div class="title">寻梦环游记</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>98 分钟</span>
+          <span><i class="meta-dot"></i>1443 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B1.html" data-title="驯龙高手1" data-id="11">
+      <div class="poster-wrap"><img src="movies/011_%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B1/poster.jpg" alt="驯龙高手1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#011</div>
+        <div class="title">驯龙高手1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>98 分钟</span>
+          <span><i class="meta-dot"></i>840 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B2.html" data-title="驯龙高手2" data-id="12">
+      <div class="poster-wrap"><img src="movies/012_%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B2/poster.jpg" alt="驯龙高手2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#012</div>
+        <div class="title">驯龙高手2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>102 分钟</span>
+          <span><i class="meta-dot"></i>1187 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B3.html" data-title="驯龙高手3" data-id="13">
+      <div class="poster-wrap"><img src="movies/013_%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B3/poster.jpg" alt="驯龙高手3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#013</div>
+        <div class="title">驯龙高手3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>104 分钟</span>
+          <span><i class="meta-dot"></i>1055 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA1.html" data-title="冰河世纪1" data-id="14">
+      <div class="poster-wrap"><img src="movies/014_%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA1/poster.jpg" alt="冰河世纪1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#014</div>
+        <div class="title">冰河世纪1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>81 分钟</span>
+          <span><i class="meta-dot"></i>568 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA2.html" data-title="冰河世纪2" data-id="15">
+      <div class="poster-wrap"><img src="movies/015_%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA2/poster.jpg" alt="冰河世纪2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#015</div>
+        <div class="title">冰河世纪2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>90 分钟</span>
+          <span><i class="meta-dot"></i>729 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA3.html" data-title="冰河世纪3" data-id="16">
+      <div class="poster-wrap"><img src="movies/016_%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA3/poster.jpg" alt="冰河世纪3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#016</div>
+        <div class="title">冰河世纪3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>94 分钟</span>
+          <span><i class="meta-dot"></i>554 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA4.html" data-title="冰河世纪4" data-id="17">
+      <div class="poster-wrap"><img src="movies/017_%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA4/poster.jpg" alt="冰河世纪4" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#017</div>
+        <div class="title">冰河世纪4</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>87 分钟</span>
+          <span><i class="meta-dot"></i>1182 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA5.html" data-title="冰河世纪5" data-id="18">
+      <div class="poster-wrap"><img src="movies/018_%E5%86%B0%E6%B2%B3%E4%B8%96%E7%BA%AA5/poster.jpg" alt="冰河世纪5" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#018</div>
+        <div class="title">冰河世纪5</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>94 分钟</span>
+          <span><i class="meta-dot"></i>1323 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%AD%94%E5%8F%91%E5%A5%87%E7%BC%98.html" data-title="魔发奇缘" data-id="19">
+      <div class="poster-wrap"><img src="movies/019_%E9%AD%94%E5%8F%91%E5%A5%87%E7%BC%98/poster.jpg" alt="魔发奇缘" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#019</div>
+        <div class="title">魔发奇缘</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>100 分钟</span>
+          <span><i class="meta-dot"></i>1091 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%B8%8E%E6%81%90%E9%BE%99%E5%90%8C%E8%A1%8C.html" data-title="与恐龙同行" data-id="20">
+      <div class="poster-wrap"><img src="movies/020_%E4%B8%8E%E6%81%90%E9%BE%99%E5%90%8C%E8%A1%8C/poster.jpg" alt="与恐龙同行" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#020</div>
+        <div class="title">与恐龙同行</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>87 分钟</span>
+          <span><i class="meta-dot"></i>1417 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%87%8D%E8%BF%94%E4%BE%8F%E7%BD%97%E7%BA%AA.html" data-title="重返侏罗纪" data-id="21">
+      <div class="poster-wrap"><img src="movies/021_%E9%87%8D%E8%BF%94%E4%BE%8F%E7%BD%97%E7%BA%AA/poster.jpg" alt="重返侏罗纪" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#021</div>
+        <div class="title">重返侏罗纪</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>86 分钟</span>
+          <span><i class="meta-dot"></i>977 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%97%A0%E6%95%8C%E7%A0%B4%E5%9D%8F%E7%8E%8B1.html" data-title="无敌破坏王1" data-id="22">
+      <div class="poster-wrap"><img src="movies/022_%E6%97%A0%E6%95%8C%E7%A0%B4%E5%9D%8F%E7%8E%8B1/poster.jpg" alt="无敌破坏王1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#022</div>
+        <div class="title">无敌破坏王1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>101 分钟</span>
+          <span><i class="meta-dot"></i>1545 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%97%A0%E6%95%8C%E7%A0%B4%E5%9D%8F%E7%8E%8B2.html" data-title="无敌破坏王2" data-id="23">
+      <div class="poster-wrap"><img src="movies/023_%E6%97%A0%E6%95%8C%E7%A0%B4%E5%9D%8F%E7%8E%8B2/poster.jpg" alt="无敌破坏王2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#023</div>
+        <div class="title">无敌破坏王2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>113 分钟</span>
+          <span><i class="meta-dot"></i>2105 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%A4%B4%E8%84%91%E7%89%B9%E5%B7%A5%E9%98%9F.html" data-title="头脑特工队" data-id="24">
+      <div class="poster-wrap"><img src="movies/024_%E5%A4%B4%E8%84%91%E7%89%B9%E5%B7%A5%E9%98%9F/poster.jpg" alt="头脑特工队" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#024</div>
+        <div class="title">头脑特工队</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>95 分钟</span>
+          <span><i class="meta-dot"></i>1367 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8B%AE%E5%AD%90%E7%8E%8B1.html" data-title="狮子王1" data-id="25">
+      <div class="poster-wrap"><img src="movies/025_%E7%8B%AE%E5%AD%90%E7%8E%8B1/poster.jpg" alt="狮子王1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#025</div>
+        <div class="title">狮子王1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>88 分钟</span>
+          <span><i class="meta-dot"></i>1148 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8B%AE%E5%AD%90%E7%8E%8B2.html" data-title="狮子王2" data-id="26">
+      <div class="poster-wrap"><img src="movies/026_%E7%8B%AE%E5%AD%90%E7%8E%8B2/poster.jpg" alt="狮子王2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#026</div>
+        <div class="title">狮子王2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>81 分钟</span>
+          <span><i class="meta-dot"></i>1471 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8B%AE%E5%AD%90%E7%8E%8B3.html" data-title="狮子王3" data-id="27">
+      <div class="poster-wrap"><img src="movies/027_%E7%8B%AE%E5%AD%90%E7%8E%8B3/poster.jpg" alt="狮子王3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#027</div>
+        <div class="title">狮子王3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>76 分钟</span>
+          <span><i class="meta-dot"></i>1286 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%A4%A7%E4%BE%A6%E6%8E%A2%E7%9A%AE%E5%8D%A1%E4%B8%98.html" data-title="大侦探皮卡丘" data-id="28">
+      <div class="poster-wrap"><img src="movies/028_%E5%A4%A7%E4%BE%A6%E6%8E%A2%E7%9A%AE%E5%8D%A1%E4%B8%98/poster.jpg" alt="大侦探皮卡丘" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#028</div>
+        <div class="title">大侦探皮卡丘</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>104 分钟</span>
+          <span><i class="meta-dot"></i>1489 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B81.html" data-title="神偷奶爸1" data-id="29">
+      <div class="poster-wrap"><img src="movies/029_%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B81/poster.jpg" alt="神偷奶爸1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#029</div>
+        <div class="title">神偷奶爸1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>94 分钟</span>
+          <span><i class="meta-dot"></i>918 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B82.html" data-title="神偷奶爸2" data-id="30">
+      <div class="poster-wrap"><img src="movies/030_%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B82/poster.jpg" alt="神偷奶爸2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#030</div>
+        <div class="title">神偷奶爸2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>98 分钟</span>
+          <span><i class="meta-dot"></i>1148 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B83.html" data-title="神偷奶爸3" data-id="31">
+      <div class="poster-wrap"><img src="movies/031_%E7%A5%9E%E5%81%B7%E5%A5%B6%E7%88%B83/poster.jpg" alt="神偷奶爸3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#031</div>
+        <div class="title">神偷奶爸3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>90 分钟</span>
+          <span><i class="meta-dot"></i>1139 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E9%BB%84%E4%BA%BA%E5%A4%A7%E7%9C%BC%E8%90%8C.html" data-title="小黄人大眼萌" data-id="32">
+      <div class="poster-wrap"><img src="movies/032_%E5%B0%8F%E9%BB%84%E4%BA%BA%E5%A4%A7%E7%9C%BC%E8%90%8C/poster.jpg" alt="小黄人大眼萌" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#032</div>
+        <div class="title">小黄人大眼萌</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>91 分钟</span>
+          <span><i class="meta-dot"></i>1049 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%B6%85%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%981.html" data-title="超人总动员1" data-id="33">
+      <div class="poster-wrap"><img src="movies/033_%E8%B6%85%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%981/poster.jpg" alt="超人总动员1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#033</div>
+        <div class="title">超人总动员1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>115 分钟</span>
+          <span><i class="meta-dot"></i>1220 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%B6%85%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%982.html" data-title="超人总动员2" data-id="34">
+      <div class="poster-wrap"><img src="movies/034_%E8%B6%85%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%982/poster.jpg" alt="超人总动员2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#034</div>
+        <div class="title">超人总动员2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>118 分钟</span>
+          <span><i class="meta-dot"></i>1963 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB1.html" data-title="功夫熊猫1" data-id="35">
+      <div class="poster-wrap"><img src="movies/035_%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB1/poster.jpg" alt="功夫熊猫1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#035</div>
+        <div class="title">功夫熊猫1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>998 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB2.html" data-title="功夫熊猫2" data-id="36">
+      <div class="poster-wrap"><img src="movies/036_%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB2/poster.jpg" alt="功夫熊猫2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#036</div>
+        <div class="title">功夫熊猫2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>90 分钟</span>
+          <span><i class="meta-dot"></i>878 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB3.html" data-title="功夫熊猫3" data-id="37">
+      <div class="poster-wrap"><img src="movies/037_%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB3/poster.jpg" alt="功夫熊猫3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#037</div>
+        <div class="title">功夫熊猫3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>95 分钟</span>
+          <span><i class="meta-dot"></i>1080 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%B1%BD%E8%BD%A6%E6%80%BB%E5%8A%A8%E5%91%981.html" data-title="汽车总动员1" data-id="38">
+      <div class="poster-wrap"><img src="movies/038_%E6%B1%BD%E8%BD%A6%E6%80%BB%E5%8A%A8%E5%91%981/poster.jpg" alt="汽车总动员1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#038</div>
+        <div class="title">汽车总动员1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>117 分钟</span>
+          <span><i class="meta-dot"></i>1475 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%B1%BD%E8%BD%A6%E6%80%BB%E5%8A%A8%E5%91%982.html" data-title="汽车总动员2" data-id="39">
+      <div class="poster-wrap"><img src="movies/039_%E6%B1%BD%E8%BD%A6%E6%80%BB%E5%8A%A8%E5%91%982/poster.jpg" alt="汽车总动员2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#039</div>
+        <div class="title">汽车总动员2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>107 分钟</span>
+          <span><i class="meta-dot"></i>1508 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%B1%BD%E8%BD%A6%E6%80%BB%E5%8A%A8%E5%91%983.html" data-title="汽车总动员3" data-id="40">
+      <div class="poster-wrap"><img src="movies/040_%E6%B1%BD%E8%BD%A6%E6%80%BB%E5%8A%A8%E5%91%983/poster.jpg" alt="汽车总动员3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#040</div>
+        <div class="title">汽车总动员3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>102 分钟</span>
+          <span><i class="meta-dot"></i>1546 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%81%90%E9%BE%99%E5%BD%93%E5%AE%B6.html" data-title="恐龙当家" data-id="41">
+      <div class="poster-wrap"><img src="movies/041_%E6%81%90%E9%BE%99%E5%BD%93%E5%AE%B6/poster.jpg" alt="恐龙当家" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#041</div>
+        <div class="title">恐龙当家</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>94 分钟</span>
+          <span><i class="meta-dot"></i>502 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A3%9E%E5%B1%8B%E7%8E%AF%E6%B8%B8%E8%AE%B0.html" data-title="飞屋环游记" data-id="42">
+      <div class="poster-wrap"><img src="movies/042_%E9%A3%9E%E5%B1%8B%E7%8E%AF%E6%B8%B8%E8%AE%B0/poster.jpg" alt="飞屋环游记" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#042</div>
+        <div class="title">飞屋环游记</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>96 分钟</span>
+          <span><i class="meta-dot"></i>946 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%B5%B7%E5%BA%95%E6%80%BB%E5%8A%A8%E5%91%981.html" data-title="海底总动员1" data-id="43">
+      <div class="poster-wrap"><img src="movies/043_%E6%B5%B7%E5%BA%95%E6%80%BB%E5%8A%A8%E5%91%981/poster.jpg" alt="海底总动员1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#043</div>
+        <div class="title">海底总动员1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>101 分钟</span>
+          <span><i class="meta-dot"></i>1837 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%B5%B7%E5%BA%95%E6%80%BB%E5%8A%A8%E5%91%982.html" data-title="海底总动员2" data-id="44">
+      <div class="poster-wrap"><img src="movies/044_%E6%B5%B7%E5%BA%95%E6%80%BB%E5%8A%A8%E5%91%982/poster.jpg" alt="海底总动员2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#044</div>
+        <div class="title">海底总动员2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>97 分钟</span>
+          <span><i class="meta-dot"></i>1614 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%AE%9D%E8%B4%9D%E8%80%81%E6%9D%BF.html" data-title="宝贝老板" data-id="45">
+      <div class="poster-wrap"><img src="movies/045_%E5%AE%9D%E8%B4%9D%E8%80%81%E6%9D%BF/poster.jpg" alt="宝贝老板" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#045</div>
+        <div class="title">宝贝老板</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>98 分钟</span>
+          <span><i class="meta-dot"></i>1806 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%88%B1%E5%AE%A0%E5%A4%A7%E6%9C%BA%E5%AF%86.html" data-title="爱宠大机密" data-id="46">
+      <div class="poster-wrap"><img src="movies/046_%E7%88%B1%E5%AE%A0%E5%A4%A7%E6%9C%BA%E5%AF%86/poster.jpg" alt="爱宠大机密" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#046</div>
+        <div class="title">爱宠大机密</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>86 分钟</span>
+          <span><i class="meta-dot"></i>1275 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E7%8E%8B%E5%AD%90.html" data-title="小王子" data-id="47">
+      <div class="poster-wrap"><img src="movies/047_%E5%B0%8F%E7%8E%8B%E5%AD%90/poster.jpg" alt="小王子" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#047</div>
+        <div class="title">小王子</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>107 分钟</span>
+          <span><i class="meta-dot"></i>1035 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%98.html" data-title="机器人总动员" data-id="48">
+      <div class="poster-wrap"><img src="movies/048_%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%80%BB%E5%8A%A8%E5%91%98/poster.jpg" alt="机器人总动员" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#048</div>
+        <div class="title">机器人总动员</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>98 分钟</span>
+          <span><i class="meta-dot"></i>710 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%A5%87%E5%B9%BB%E6%A3%AE%E6%9E%97.html" data-title="奇幻森林" data-id="49">
+      <div class="poster-wrap"><img src="movies/049_%E5%A5%87%E5%B9%BB%E6%A3%AE%E6%9E%97/poster.jpg" alt="奇幻森林" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#049</div>
+        <div class="title">奇幻森林</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>106 分钟</span>
+          <span><i class="meta-dot"></i>1219 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%96%AF%E7%8B%82%E5%8E%9F%E5%A7%8B%E4%BA%BA.html" data-title="疯狂原始人" data-id="50">
+      <div class="poster-wrap"><img src="movies/050_%E7%96%AF%E7%8B%82%E5%8E%9F%E5%A7%8B%E4%BA%BA/poster.jpg" alt="疯狂原始人" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#050</div>
+        <div class="title">疯狂原始人</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>98 分钟</span>
+          <span><i class="meta-dot"></i>1020 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A01.html" data-title="马达加斯加1" data-id="51">
+      <div class="poster-wrap"><img src="movies/051_%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A01/poster.jpg" alt="马达加斯加1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#051</div>
+        <div class="title">马达加斯加1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>86 分钟</span>
+          <span><i class="meta-dot"></i>1186 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A02.html" data-title="马达加斯加2" data-id="52">
+      <div class="poster-wrap"><img src="movies/052_%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A02/poster.jpg" alt="马达加斯加2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#052</div>
+        <div class="title">马达加斯加2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>89 分钟</span>
+          <span><i class="meta-dot"></i>1234 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A03.html" data-title="马达加斯加3" data-id="53">
+      <div class="poster-wrap"><img src="movies/053_%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A03/poster.jpg" alt="马达加斯加3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#053</div>
+        <div class="title">马达加斯加3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>93 分钟</span>
+          <span><i class="meta-dot"></i>1341 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A04.html" data-title="马达加斯加4" data-id="54">
+      <div class="poster-wrap"><img src="movies/054_%E9%A9%AC%E8%BE%BE%E5%8A%A0%E6%96%AF%E5%8A%A04/poster.jpg" alt="马达加斯加4" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#054</div>
+        <div class="title">马达加斯加4</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>1083 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%8B%87%E6%95%A2%E4%BC%A0%E8%AF%B4.html" data-title="勇敢传说" data-id="55">
+      <div class="poster-wrap"><img src="movies/055_%E5%8B%87%E6%95%A2%E4%BC%A0%E8%AF%B4/poster.jpg" alt="勇敢传说" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#055</div>
+        <div class="title">勇敢传说</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>94 分钟</span>
+          <span><i class="meta-dot"></i>875 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E9%A9%AC%E5%9B%BD%E5%A5%B3%E5%AD%A91.html" data-title="小马国女孩1" data-id="56">
+      <div class="poster-wrap"><img src="movies/056_%E5%B0%8F%E9%A9%AC%E5%9B%BD%E5%A5%B3%E5%AD%A91/poster.jpg" alt="小马国女孩1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#056</div>
+        <div class="title">小马国女孩1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>73 分钟</span>
+          <span><i class="meta-dot"></i>1196 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E9%A9%AC%E5%9B%BD%E5%A5%B3%E5%AD%A92.html" data-title="小马国女孩2" data-id="57">
+      <div class="poster-wrap"><img src="movies/057_%E5%B0%8F%E9%A9%AC%E5%9B%BD%E5%A5%B3%E5%AD%A92/poster.jpg" alt="小马国女孩2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#057</div>
+        <div class="title">小马国女孩2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>73 分钟</span>
+          <span><i class="meta-dot"></i>1158 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E9%A9%AC%E5%9B%BD%E5%A5%B3%E5%AD%A93.html" data-title="小马国女孩3" data-id="58">
+      <div class="poster-wrap"><img src="movies/058_%E5%B0%8F%E9%A9%AC%E5%9B%BD%E5%A5%B3%E5%AD%A93/poster.jpg" alt="小马国女孩3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#058</div>
+        <div class="title">小马国女孩3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>72 分钟</span>
+          <span><i class="meta-dot"></i>1108 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%B8%81%E4%B8%81%E5%8E%86%E9%99%A9%E8%AE%B0.html" data-title="丁丁历险记" data-id="59">
+      <div class="poster-wrap"><img src="movies/059_%E4%B8%81%E4%B8%81%E5%8E%86%E9%99%A9%E8%AE%B0/poster.jpg" alt="丁丁历险记" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#059</div>
+        <div class="title">丁丁历险记</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>107 分钟</span>
+          <span><i class="meta-dot"></i>1210 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%80%AA%E7%89%A9%E5%85%AC%E5%8F%B8.html" data-title="怪物公司" data-id="61">
+      <div class="poster-wrap"><img src="movies/061_%E6%80%AA%E7%89%A9%E5%85%AC%E5%8F%B8/poster.jpg" alt="怪物公司" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#061</div>
+        <div class="title">怪物公司</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>1155 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E6%80%AA%E5%85%BD%E5%A4%A7%E5%AD%A6.html" data-title="怪兽大学" data-id="62">
+      <div class="poster-wrap"><img src="movies/062_%E6%80%AA%E5%85%BD%E5%A4%A7%E5%AD%A6/poster.jpg" alt="怪兽大学" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#062</div>
+        <div class="title">怪兽大学</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>104 分钟</span>
+          <span><i class="meta-dot"></i>1351 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%B9%90%E9%AB%98%E5%A4%A7%E7%94%B5%E5%BD%B11.html" data-title="乐高大电影1" data-id="63">
+      <div class="poster-wrap"><img src="movies/063_%E4%B9%90%E9%AB%98%E5%A4%A7%E7%94%B5%E5%BD%B11/poster.jpg" alt="乐高大电影1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#063</div>
+        <div class="title">乐高大电影1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>100 分钟</span>
+          <span><i class="meta-dot"></i>2000 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%B9%90%E9%AB%98%E5%A4%A7%E7%94%B5%E5%BD%B12.html" data-title="乐高大电影2" data-id="64">
+      <div class="poster-wrap"><img src="movies/064_%E4%B9%90%E9%AB%98%E5%A4%A7%E7%94%B5%E5%BD%B12/poster.jpg" alt="乐高大电影2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#064</div>
+        <div class="title">乐高大电影2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>107 分钟</span>
+          <span><i class="meta-dot"></i>1860 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%B2%BE%E7%81%B5%E6%97%85%E7%A4%BE1.html" data-title="精灵旅社1" data-id="65">
+      <div class="poster-wrap"><img src="movies/065_%E7%B2%BE%E7%81%B5%E6%97%85%E7%A4%BE1/poster.jpg" alt="精灵旅社1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#065</div>
+        <div class="title">精灵旅社1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>1423 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%B2%BE%E7%81%B5%E6%97%85%E7%A4%BE2.html" data-title="精灵旅社2" data-id="66">
+      <div class="poster-wrap"><img src="movies/066_%E7%B2%BE%E7%81%B5%E6%97%85%E7%A4%BE2/poster.jpg" alt="精灵旅社2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#066</div>
+        <div class="title">精灵旅社2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>89 分钟</span>
+          <span><i class="meta-dot"></i>1258 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%B2%BE%E7%81%B5%E6%97%85%E7%A4%BE3.html" data-title="精灵旅社3" data-id="67">
+      <div class="poster-wrap"><img src="movies/067_%E7%B2%BE%E7%81%B5%E6%97%85%E7%A4%BE3/poster.jpg" alt="精灵旅社3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#067</div>
+        <div class="title">精灵旅社3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>97 分钟</span>
+          <span><i class="meta-dot"></i>1217 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%B5%9B%E8%BD%A6%E8%9C%97%E7%89%9B.html" data-title="赛车蜗牛" data-id="68">
+      <div class="poster-wrap"><div class="no-poster">
+                <div class="movie-icon">🎬</div>
+                <div class="movie-initials">赛车蜗牛</div>
+              </div>
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#068</div>
+        <div class="title">赛车蜗牛</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>96 分钟</span>
+          <span><i class="meta-dot"></i>1255 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%981.html" data-title="玩具总动员1" data-id="69">
+      <div class="poster-wrap"><img src="movies/069_%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%981/poster.jpg" alt="玩具总动员1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#069</div>
+        <div class="title">玩具总动员1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>81 分钟</span>
+          <span><i class="meta-dot"></i>1175 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%982.html" data-title="玩具总动员2" data-id="70">
+      <div class="poster-wrap"><img src="movies/070_%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%982/poster.jpg" alt="玩具总动员2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#070</div>
+        <div class="title">玩具总动员2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>1145 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%983.html" data-title="玩具总动员3" data-id="71">
+      <div class="poster-wrap"><img src="movies/071_%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%983/poster.jpg" alt="玩具总动员3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#071</div>
+        <div class="title">玩具总动员3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>102 分钟</span>
+          <span><i class="meta-dot"></i>1272 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%984.html" data-title="玩具总动员4" data-id="72">
+      <div class="poster-wrap"><img src="movies/072_%E7%8E%A9%E5%85%B7%E6%80%BB%E5%8A%A8%E5%91%984/poster.jpg" alt="玩具总动员4" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#072</div>
+        <div class="title">玩具总动员4</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>100 分钟</span>
+          <span><i class="meta-dot"></i>1720 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%9C%8D%E9%A1%BF%E4%B8%8E%E6%97%A0%E5%90%8D%E6%B0%8F.html" data-title="霍顿与无名氏" data-id="73">
+      <div class="poster-wrap"><img src="movies/073_%E9%9C%8D%E9%A1%BF%E4%B8%8E%E6%97%A0%E5%90%8D%E6%B0%8F/poster.jpg" alt="霍顿与无名氏" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#073</div>
+        <div class="title">霍顿与无名氏</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>86 分钟</span>
+          <span><i class="meta-dot"></i>1086 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%8A%B1%E6%9C%A8%E5%85%B01.html" data-title="花木兰1" data-id="74">
+      <div class="poster-wrap"><img src="movies/074_%E8%8A%B1%E6%9C%A8%E5%85%B01/poster.jpg" alt="花木兰1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#074</div>
+        <div class="title">花木兰1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>88 分钟</span>
+          <span><i class="meta-dot"></i>875 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%8A%B1%E6%9C%A8%E5%85%B0.html" data-title="花木兰" data-id="75">
+      <div class="poster-wrap"><img src="movies/075_%E8%8A%B1%E6%9C%A8%E5%85%B0/poster.jpg" alt="花木兰" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#075</div>
+        <div class="title">花木兰</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>79 分钟</span>
+          <span><i class="meta-dot"></i>1086 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%BB%99%E5%B1%A5%E5%A5%87%E7%BC%98.html" data-title="仙履奇缘" data-id="76">
+      <div class="poster-wrap"><img src="movies/076_%E4%BB%99%E5%B1%A5%E5%A5%87%E7%BC%98/poster.jpg" alt="仙履奇缘" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#076</div>
+        <div class="title">仙履奇缘</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>74 分钟</span>
+          <span><i class="meta-dot"></i>920 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%BB%99%E5%B1%A5%E5%A5%87%E7%BC%982.html" data-title="仙履奇缘2" data-id="77">
+      <div class="poster-wrap"><img src="movies/077_%E4%BB%99%E5%B1%A5%E5%A5%87%E7%BC%982/poster.jpg" alt="仙履奇缘2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#077</div>
+        <div class="title">仙履奇缘2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>73 分钟</span>
+          <span><i class="meta-dot"></i>807 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E4%BB%99%E5%B1%A5%E5%A5%87%E7%BC%983.html" data-title="仙履奇缘3" data-id="78">
+      <div class="poster-wrap"><img src="movies/078_%E4%BB%99%E5%B1%A5%E5%A5%87%E7%BC%983/poster.jpg" alt="仙履奇缘3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#078</div>
+        <div class="title">仙履奇缘3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>74 分钟</span>
+          <span><i class="meta-dot"></i>881 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%98%BF%E6%8B%89%E4%B8%81.html" data-title="阿拉丁" data-id="79">
+      <div class="poster-wrap"><img src="movies/079_%E9%98%BF%E6%8B%89%E4%B8%81/poster.jpg" alt="阿拉丁" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#079</div>
+        <div class="title">阿拉丁</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>90 分钟</span>
+          <span><i class="meta-dot"></i>1367 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%88%B1%E4%B8%BD%E4%B8%9D%E6%A2%A6%E6%B8%B8%E4%BB%99%E5%A2%83.html" data-title="爱丽丝梦游仙境" data-id="80">
+      <div class="poster-wrap"><img src="movies/080_%E7%88%B1%E4%B8%BD%E4%B8%9D%E6%A2%A6%E6%B8%B8%E4%BB%99%E5%A2%83/poster.jpg" alt="爱丽丝梦游仙境" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#080</div>
+        <div class="title">爱丽丝梦游仙境</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>75 分钟</span>
+          <span><i class="meta-dot"></i>1066 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%99%BD%E9%9B%AA%E5%85%AC%E4%B8%BB.html" data-title="白雪公主" data-id="81">
+      <div class="poster-wrap"><img src="movies/081_%E7%99%BD%E9%9B%AA%E5%85%AC%E4%B8%BB/poster.jpg" alt="白雪公主" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#081</div>
+        <div class="title">白雪公主</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>83 分钟</span>
+          <span><i class="meta-dot"></i>797 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%BE%8E%E9%A3%9F%E6%80%BB%E5%8A%A8%E5%91%98.html" data-title="美食总动员" data-id="82">
+      <div class="poster-wrap"><img src="movies/082_%E7%BE%8E%E9%A3%9F%E6%80%BB%E5%8A%A8%E5%91%98/poster.jpg" alt="美食总动员" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#082</div>
+        <div class="title">美食总动员</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>111 分钟</span>
+          <span><i class="meta-dot"></i>1325 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%8F%B2%E5%8A%AA%E6%AF%94%E5%A4%A7%E7%94%B5%E5%BD%B1.html" data-title="史努比大电影" data-id="83">
+      <div class="poster-wrap"><img src="movies/083_%E5%8F%B2%E5%8A%AA%E6%AF%94%E5%A4%A7%E7%94%B5%E5%BD%B1/poster.jpg" alt="史努比大电影" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#083</div>
+        <div class="title">史努比大电影</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>88 分钟</span>
+          <span><i class="meta-dot"></i>855 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A3%9E%E6%9C%BA%E6%80%BB%E5%8A%A8%E5%91%981.html" data-title="飞机总动员1" data-id="84">
+      <div class="poster-wrap"><img src="movies/084_%E9%A3%9E%E6%9C%BA%E6%80%BB%E5%8A%A8%E5%91%981/poster.jpg" alt="飞机总动员1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#084</div>
+        <div class="title">飞机总动员1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>92 分钟</span>
+          <span><i class="meta-dot"></i>1403 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%A3%9E%E6%9C%BA%E6%80%BB%E5%8A%A8%E5%91%982.html" data-title="飞机总动员2" data-id="85">
+      <div class="poster-wrap"><img src="movies/085_%E9%A3%9E%E6%9C%BA%E6%80%BB%E5%8A%A8%E5%91%982/poster.jpg" alt="飞机总动员2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#085</div>
+        <div class="title">飞机总动员2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>84 分钟</span>
+          <span><i class="meta-dot"></i>1438 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%BF%AB%E4%B9%90%E7%9A%84%E5%A4%A7%E8%84%9A1.html" data-title="快乐的大脚1" data-id="86">
+      <div class="poster-wrap"><img src="movies/086_%E5%BF%AB%E4%B9%90%E7%9A%84%E5%A4%A7%E8%84%9A1/poster.jpg" alt="快乐的大脚1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#086</div>
+        <div class="title">快乐的大脚1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>108 分钟</span>
+          <span><i class="meta-dot"></i>1370 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%BF%AB%E4%B9%90%E7%9A%84%E5%A4%A7%E8%84%9A2.html" data-title="快乐的大脚2" data-id="87">
+      <div class="poster-wrap"><img src="movies/087_%E5%BF%AB%E4%B9%90%E7%9A%84%E5%A4%A7%E8%84%9A2/poster.jpg" alt="快乐的大脚2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#087</div>
+        <div class="title">快乐的大脚2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>99 分钟</span>
+          <span><i class="meta-dot"></i>1551 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%8F%B7%E6%98%9F%E7%90%83.html" data-title="号星球" data-id="88">
+      <div class="poster-wrap"><img src="movies/088_%E5%8F%B7%E6%98%9F%E7%90%83/poster.jpg" alt="号星球" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#088</div>
+        <div class="title">号星球</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>91 分钟</span>
+          <span><i class="meta-dot"></i>923 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%87%8C%E7%BA%A6%E5%A4%A7%E5%86%92%E9%99%A91.html" data-title="里约大冒险1" data-id="89">
+      <div class="poster-wrap"><img src="movies/089_%E9%87%8C%E7%BA%A6%E5%A4%A7%E5%86%92%E9%99%A91/poster.jpg" alt="里约大冒险1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#089</div>
+        <div class="title">里约大冒险1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>96 分钟</span>
+          <span><i class="meta-dot"></i>1326 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E9%87%8C%E7%BA%A6%E5%A4%A7%E5%86%92%E9%99%A92.html" data-title="里约大冒险2" data-id="90">
+      <div class="poster-wrap"><img src="movies/090_%E9%87%8C%E7%BA%A6%E5%A4%A7%E5%86%92%E9%99%A92/poster.jpg" alt="里约大冒险2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#090</div>
+        <div class="title">里约大冒险2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>101 分钟</span>
+          <span><i class="meta-dot"></i>1522 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E8%99%AB%E8%99%AB%E6%80%BB%E5%8A%A8%E5%91%98.html" data-title="虫虫总动员" data-id="91">
+      <div class="poster-wrap"><img src="movies/091_%E8%99%AB%E8%99%AB%E6%80%BB%E5%8A%A8%E5%91%98/poster.jpg" alt="虫虫总动员" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#091</div>
+        <div class="title">虫虫总动员</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>95 分钟</span>
+          <span><i class="meta-dot"></i>1470 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC1.html" data-title="小美人鱼1" data-id="101">
+      <div class="poster-wrap"><img src="movies/101_%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC1/poster.jpg" alt="小美人鱼1" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#101</div>
+        <div class="title">小美人鱼1</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>83 分钟</span>
+          <span><i class="meta-dot"></i>890 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC2.html" data-title="小美人鱼2" data-id="102">
+      <div class="poster-wrap"><img src="movies/102_%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC2/poster.jpg" alt="小美人鱼2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#102</div>
+        <div class="title">小美人鱼2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>75 分钟</span>
+          <span><i class="meta-dot"></i>961 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC3.html" data-title="小美人鱼3" data-id="103">
+      <div class="poster-wrap"><img src="movies/103_%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC3/poster.jpg" alt="小美人鱼3" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#103</div>
+        <div class="title">小美人鱼3</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>78 分钟</span>
+          <span><i class="meta-dot"></i>914 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%A4%B4%E5%8F%B7%E7%8E%A9%E5%AE%B6.html" data-title="头号玩家" data-id="105">
+      <div class="poster-wrap"><img src="movies/105_%E5%A4%B4%E5%8F%B7%E7%8E%A9%E5%AE%B6/poster.jpg" alt="头号玩家" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#105</div>
+        <div class="title">头号玩家</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>140 分钟</span>
+          <span><i class="meta-dot"></i>1713 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%BB%BF%E6%AF%9B%E6%80%AA%E6%A0%BC%E6%9E%97%E5%A5%87.html" data-title="绿毛怪格林奇" data-id="106">
+      <div class="poster-wrap"><img src="movies/106_%E7%BB%BF%E6%AF%9B%E6%80%AA%E6%A0%BC%E6%9E%97%E5%A5%87/poster.jpg" alt="绿毛怪格林奇" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#106</div>
+        <div class="title">绿毛怪格林奇</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>86 分钟</span>
+          <span><i class="meta-dot"></i>1275 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E7%96%AF%E7%8B%82%E5%A4%96%E6%98%9F%E4%BA%BA.html" data-title="疯狂外星人" data-id="107">
+      <div class="poster-wrap"><img src="movies/107_%E7%96%AF%E7%8B%82%E5%A4%96%E6%98%9F%E4%BA%BA/poster.jpg" alt="疯狂外星人" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#107</div>
+        <div class="title">疯狂外星人</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>94 分钟</span>
+          <span><i class="meta-dot"></i>1150 行台词</span>
+        </div>
+      </div>
+    </a>
+    <a class="card" href="%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%982.html" data-title="冰雪奇缘2" data-id="108">
+      <div class="poster-wrap"><img src="movies/108_%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%982/poster.jpg" alt="冰雪奇缘2" loading="lazy">
+              <div class="badge locked">试看</div>
+              <div class="hover-overlay"><span class="action-btn">开始学习 →</span></div></div>
+      <div class="info">
+        <div class="id">#108</div>
+        <div class="title">冰雪奇缘2</div>
+        <div class="meta-row">
+          <span><i class="meta-dot"></i>103 分钟</span>
+          <span><i class="meta-dot"></i>1505 行台词</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<footer>数据来自 faster-whisper 转录 + 序列对齐</footer>
+
+<!-- 会员弹窗 -->
+<div class="vip-modal" id="vipModal">
+  <div class="vip-box">
+    <button class="vip-close" onclick="hideVipModal()">&times;</button>
+    <h2>⭐ 会员解锁全站内容</h2>
+    <p class="sub">一次付费，永久解锁所有电影台词</p>
+    <div class="vip-price">¥19.9 <small>永久</small></div>
+    <div class="vip-qr"><img src="qr.jpg" alt="微信收款码"></div>
+    <p class="vip-hint">
+      1. 扫描二维码完成支付 ¥19.9<br>
+      2. 发送支付截图给客服微信<br>
+      <strong id="wxId">DoctorJevon</strong>
+      <button class="wx-copy" onclick="copyWx()">复制微信号</button><br>
+      3. 输入客服发给你的解锁码
+    </p>
+    <div class="vip-input-row">
+      <input id="vipCode" placeholder="输入解锁码" maxlength="10">
+      <button id="vipUnlockBtn" onclick="unlockVIP()">立即解锁</button>
+    </div>
+    <div class="vip-result" id="vipResult"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  try {
+    var cards = document.querySelectorAll(".card");
+    cards.forEach(function(card) {
+      var mid = card.getAttribute("data-id");
+      if (!mid) return;
+      var badge = card.querySelector(".badge");
+      if (!badge) return;
+      if (mid === "1") { badge.className = "badge unlocked"; badge.textContent = "样片免费"; return; }
+      var saved = localStorage.getItem("unlock_" + mid);
+      if (saved) { badge.className = "badge unlocked"; badge.textContent = "已解锁"; }
+    });
+  } catch(e) {}
+})();
+
+// 会员弹窗
+function showVipModal() {
+  document.getElementById("vipModal").classList.add("show");
+  // 检查是否已是会员
+  checkMembershipStatus();
+}
+function hideVipModal() {
+  document.getElementById("vipModal").classList.remove("show");
+}
+document.getElementById("vipModal").addEventListener("click", function(e) {
+  if (e.target === this) hideVipModal();
+});
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") hideVipModal();
+});
+
+function copyWx() {
+  var id = document.getElementById("wxId").textContent;
+  navigator.clipboard.writeText(id).then(function() {
+    var btn = document.querySelector(".wx-copy");
+    btn.textContent = "已复制";
+    setTimeout(function() { btn.textContent = "复制微信号"; }, 1500);
+  }).catch(function() {});
+}
+
+async function verifyLicense(movieId, code) {
+  try {
+    var key = await crypto.subtle.importKey(
+      "raw", new TextEncoder().encode("d1sney-m0v!e-p4yw4ll-s3cr3t-k3y-2024"),
+      { name: "HMAC", hash: "SHA-256" }, false, ["sign"]
+    );
+    var sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(String(movieId)));
+    var expected = Array.from(new Uint8Array(sig))
+      .map(function(b) { return b.toString(16).padStart(2, "0"); }).join("").slice(0, 10);
+    return code === expected;
+  } catch(e) { return false; }
+}
+
+async function checkMembershipStatus() {
+  var code = localStorage.getItem("membership");
+  if (code) {
+    var ok = await verifyLicense(0, code);
+    if (ok) {
+      document.getElementById("vipResult").textContent = "你已是会员，已解锁全部内容 ✓";
+      document.getElementById("vipResult").className = "vip-result success";
+      document.getElementById("vipUnlockBtn").disabled = true;
+      document.getElementById("vipCode").disabled = true;
+      return true;
+    } else {
+      localStorage.removeItem("membership");
+    }
+  }
+  return false;
+}
+
+async function unlockVIP() {
+  var code = document.getElementById("vipCode").value.trim();
+  var result = document.getElementById("vipResult");
+  var btn = document.getElementById("vipUnlockBtn");
+
+  if (!code) { result.textContent = "请输入解锁码"; result.className = "vip-result error"; return; }
+
+  btn.disabled = true;
+  btn.textContent = "验证中…";
+
+  var ok = await verifyLicense(0, code);
+  if (ok) {
+    localStorage.setItem("membership", code);
+    result.textContent = "激活成功！会员已开通，可解锁全部电影";
+    result.className = "vip-result success";
+    btn.textContent = "已激活";
+
+    // 更新所有卡片角标
+    document.querySelectorAll(".card").forEach(function(card) {
+      var mid = card.getAttribute("data-id");
+      var badge = card.querySelector(".badge");
+      if (!badge || mid === "1") return;
+      badge.className = "badge unlocked";
+      badge.textContent = "已解锁";
+    });
+
+    // 1.5 秒后自动关闭弹窗
+    setTimeout(function() { hideVipModal(); }, 1500);
+  } else {
+    result.textContent = "解锁码无效，请联系客服重新获取";
+    result.className = "vip-result error";
+    btn.disabled = false;
+    btn.textContent = "立即解锁";
+  }
+}
+
+// 页面加载时检查会员状态并更新角标
+(async function() {
+  var memberCode = localStorage.getItem("membership");
+  if (memberCode) {
+    var ok = await verifyLicense(0, memberCode);
+    if (ok) {
+      document.querySelectorAll(".card").forEach(function(card) {
+        var mid = card.getAttribute("data-id");
+        var badge = card.querySelector(".badge");
+        if (!badge || mid === "1") return;
+        badge.className = "badge unlocked";
+        badge.textContent = "已解锁";
+      });
+    } else {
+      localStorage.removeItem("membership");
+    }
+  }
+})();
+
+function filt(q) {
+  q = q.trim().toLowerCase();
+  document.querySelectorAll(".card").forEach(function(c) {
+    c.style.display = !q || (c.dataset.title || "").toLowerCase().includes(q) ? "" : "none";
+  });
+}
+</script>
+</body>
+</html>
